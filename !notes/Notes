@@ -1,0 +1,58 @@
+What functions are included in a guest list?
+
+- A guest list of an restaurant
+- Table selection, with 2 and 6 seats
+- view the opening hours for the restaurant
+- Enter Time for the reservation
+- You can reservate multiple tables
+
+- Enter e-mail for confirmation
+- Enter name for communication
+
+- Save data in a server
+- View blocked seats
+
+
+Visual Style:
+Logo color: #542633
+
+Luxury Restaurant
+White
+Kings blue
+Brown
+warm lights
+Visual example: https://roommanager.com/return-to-the-office/red-spot/
+
+
+
+Reservation process:
+1. Select if you want to reserve a duo-table ore a group table (with a button).
+2. Select a reservation date and time (today, 20:00).
+3. Select a table an the table map. Click on confirm.
+4. A pop up with a form. (first name, last name, E-mail for confirmation).
+5. Confirm the reservation.
+6. Get a conformation E-mail.
+
+User Functions:
+2. SELECT date, confirmed and time. If all tables are confirmed date = blurry. If times windows are full: time = blurry.
+3. SELECT table. If tables are confirmed: table = red.
+4. INSERT id, date, table, time, confirmed, user_name, email_address.
+
+Admin Functions:
+1. SELECT all, show all reservations.
+2. INSERT all, cancel/change any reservation.
+
+
+Website:
+<input type="date">
+
+Ajax (Asynchronous JavaScript and XML)
+To change Asynchronous data of a website
+
+Needed programming language:
+- HTML
+- CSS
+- Javascript
+- PHP
+- mySQL
+
