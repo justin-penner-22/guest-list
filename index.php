@@ -10,90 +10,41 @@
 </head>
 <body>
 
-<button class="button-theme-brown" id="kadabra" onclick="reservationData()">AJAX</button>
+<nav>
+    <div class="container">
+        <div class="nav-list">
+            <img class="logo", href="http://localhost/guest-list/", src="images/primary-saruman-high-resolution-logo.svg">
+            <ul>
+                <li><a href="" class="nav-btn">Reservierungen</a></li>
+                <li><a href="" class="nav-btn">Speisen und Getränke</a></li>
+                <li><a href="" class="nav-btn">Reviews</a></li>
+                <li><a href="" class="nav-btn">Karriere</a></li>
+                <li><a href="" class="nav-btn">Über uns</a></li>
+                <li><a href="" class="nav-btn">Standort</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<div id="demo">Hier wird Text generiert</div>
+<img class="slider-img" alt="test" src="images/slides-drinks.jpg">
 
-<script>
-async function reservationData(){
+<div class="slides">
+        <img alt="customer" src="Images/slides-drinks.jpeg">
+        <div class="caption-text">Caption1</div>
+    </div>
+    <div class="slides">
+        <img alt="customer" src="Images/Designer%20(2).jpeg">
+        <div class="caption-text">Caption2</div>
+    </div>
+    <div class="slides">
+        <img alt="customer" src="Images/slides-red-wine.jpeg">
+        <div class="caption-text">Caption3</div>
+    </div>
 
-    let reservations = await fetchReservations();  // Asynchrone Funktion, um Reservierungen abzurufen
-    console.log(reservations);
-
-    function displayData(reservations){
-        const outputElement = document.getElementById("demo"); // Das Ziel-Element für die Ausgabe
-        outputElement.innerHTML = ""; // Leert den Inhalt von 'outputElement'
-
-
-        //Erstellen der Tabelle
-        const table = document.createElement("table");
-
-        const thead = table.createTHead();
-        const headerRow = thead.insertRow();
-        const headers = ["Table", "Name", "Confirmed", "Time", "Date", "Email", "ID"];
-
-        headers.forEach(headerText => {
-            const headerCell = document.createElement("th");
-            headerCell.textContent = headerText;
-            headerRow.appendChild(headerCell);
-        });
-
-        // Erstelle den Tabellenkörper (tbody)
-        const tbody = table.createTBody();
-
-        // Erstelle für jede Reservierung eine neue Tabellenzeile
-        reservations.forEach(reservation => {
-            const row = tbody.insertRow();
-
-            const tableCell = row.insertCell();
-            tableCell.textContent = reservation.table;
-
-            const nameCell = row.insertCell();
-            nameCell.textContent = reservation.user_name;
-
-            const confirmedCell = row.insertCell();
-            confirmedCell.textContent = reservation.confirmed;
-
-            const timeCell = row.insertCell();
-            timeCell.textContent = reservation.time;
-
-            const dateCell = row.insertCell();
-            dateCell.textContent = reservation.date;
-
-            const email_addressCell = row.insertCell();
-            email_addressCell.textContent = reservation.email_address;
-
-            const idCell = row.insertCell();
-            idCell.textContent = reservation.id;
-
-        });
-
-        // Füge die Tabelle zum DOM hinzu
-        outputElement.appendChild(table);
-    }
-    // Aufruf der Funktion zur Anzeige der Reservierungen
-    displayData(reservations);
-
-};
-
-</script>
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
 
 <!--
-
-<header>
-    <img alt="logo" class="logo" src="Images/yummi-stuff-high-resolution-logo-Photoroom3.png"/>
-</header>
-
-<div class="container-max">
-    <nav class="container-min">
-        <button class="button-theme-brown">Locations</button>
-        <button class="button-theme-brown">Delivery</button>
-        <button class="button-theme-brown">Food and Drinks</button>
-        <button class="button-theme-brown">Jobs</button>
-        <button class="button-theme-brown">About us</button>
-    </nav>
-</div>
-
 <div class="container-max">
     <div class="container-min">
         <div class="map">
@@ -257,35 +208,21 @@ async function reservationData(){
                 </div>
             </div>
             <div id="lobby">
-                lobby
+                Lobby
             </div>
         </div>
-    </div>
-    <div class="side-menu">
-        <button class="button-theme-brown">Table for two</button>
-        <button class="button-theme-brown">Table for six</button>
     </div>
 </div>
 -->
 
 <!--
-    <div class="slides">
-        <img alt="customer" src="Images/Designer%20(1).jpeg">
-        <div class="caption-text">Caption1</div>
-    </div>
-    <div class="slides">
-        <img alt="customer" src="Images/Designer%20(2).jpeg">
-        <div class="caption-text">Caption2</div>
-    </div>
-    <div class="slides">
-        <img alt="customer" src="Images/Designer%20(3).jpeg">
-        <div class="caption-text">Caption3</div>
-    </div>
 
-    <a class="prev" onclick="plusSlides(-1)"><</a>
-    <a class="next" onclick="plusSlides(1)">></a>
     -->
 
+<!-- Generate database table
+<button class="button-theme-brown" id="kadabra" onclick="reservationData()">AJAX</button>
+<div id="demo">Hier wird Text generiert</div>
+-->
 
 </body>
 
