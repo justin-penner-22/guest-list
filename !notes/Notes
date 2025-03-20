@@ -1,20 +1,5 @@
-What functions are included in a guest list?
-
-- A guest list of an restaurant
-- Table selection, with 2 and 6 seats
-- view the opening hours for the restaurant
-- Enter Time for the reservation
-- You can reservate multiple tables
-
-- Enter e-mail for confirmation
-- Enter name for communication
-
-- Save data in a server
-- View blocked seats
-
-
 Visual Style:
-Logo color: #542633
+Logo color:
 
 Luxury Restaurant:
 White
@@ -24,6 +9,7 @@ Visual example:
 https://wraptrack.ams3.cdn.digitaloceanspaces.com/images_medium/1/328/Kenhuru-Vitrazh-Kings-Blue-3471.png
 https://roommanager.com/return-to-the-office/red-spot/
 https://www.tourmyindia.com/blog//wp-content/uploads/2018/12/BAR-PALLADIO-JAIPUR.jpg
+https://gartenlaube-marburg.de/
 
 
 Reservation process:
@@ -44,11 +30,12 @@ Admin Functions:
 2. INSERT all, cancel/change any reservation.
 
 
-Website:
+Website tools:
 <input type="date">
-
 Ajax (Asynchronous JavaScript and XML)
 To change Asynchronous data of a website
+Use background-attachment: fixed; on images to make the website smother
+
 
 Needed programming language:
 - HTML

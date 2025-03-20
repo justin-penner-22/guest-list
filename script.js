@@ -1,7 +1,8 @@
-//Slider
+//slider
 let slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
     showSlides(slideIndex);
+    autoSlide();
 });
 
 
@@ -23,14 +24,21 @@ function showSlides(n) {
     }
     // Hide all slides
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].classList.remove("active");
+        slides[i].style.opacity = 0;
+        slides[i].style.visibility = "hidden";
     }
 
     // Display the current slide
-    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].style.transition = "opacity 0.5s";
+    slides[slideIndex - 1].classList.add("active");
+    slides[slideIndex - 1].style.opacity = 1;
+    slides[slideIndex - 1].style.visibility = "visible";
 }
 
+
+function autoSlide() {
+    autoSlideInterval = setInterval(() => plusSlides(1), 8000);
+}
 
 //fetch reservation data
     async function fetchReservations() {
@@ -91,7 +99,6 @@ function showSlides(n) {
 
                 const idCell = row.insertCell();
                 idCell.textContent = reservation.id;
-
             });
 
             // Füge die Tabelle zum DOM hinzu

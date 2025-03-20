@@ -13,13 +13,13 @@
 <nav>
     <div class="container">
         <div class="nav-list">
-            <a  href="/guest-list"><img class="logo", src="images/primary-saruman-high-resolution-logo.svg"></a>
+            <a  href="/guest-list"><img class="logo", src="images/logo/logo-no-background-blue.svg"></a>
             <ul>
                 <li><a href="?p=reservations" class="nav-btn">Reservierungen</a></li>
                 <li><a href="?p=dishes" class="nav-btn">Speisen und Getränke</a></li>
                 <li><a href="?p=reviews" class="nav-btn">Reviews</a></li>
                 <li><a href="?p=carrier" class="nav-btn">Karriere</a></li>
-                <li><a href="?p=aboutus" class="nav-btn">Über uns</a></li>
+                <li><a href="?p=aboutUs" class="nav-btn">Über uns</a></li>
                 <li><a href="?p=location" class="nav-btn">Standort</a></li>
             </ul>
         </div>
