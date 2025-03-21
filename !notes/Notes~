@@ -1,0 +1,46 @@
+Visual Style:
+Logo color: #542633
+
+Luxury Restaurant:
+White
+Kings blue
+
+Visual example:
+https://wraptrack.ams3.cdn.digitaloceanspaces.com/images_medium/1/328/Kenhuru-Vitrazh-Kings-Blue-3471.png
+https://roommanager.com/return-to-the-office/red-spot/
+https://www.tourmyindia.com/blog//wp-content/uploads/2018/12/BAR-PALLADIO-JAIPUR.jpg
+https://gartenlaube-marburg.de/
+
+
+Reservation process:
+1. Select if you want to reserve a duo-table ore a group table (with a button).
+2. Select a reservation date and time (today, 20:00).
+3. Select a table an the table map. Click on confirm.
+4. A pop up with a form. (first name, last name, E-mail for confirmation).
+5. Confirm the reservation.
+6. Get a conformation E-mail.
+
+User Functions:
+2. SELECT date, confirmed and time. If all tables are confirmed date = blurry. If times windows are full: time = blurry.
+3. SELECT table. If tables are confirmed: table = red.
+4. INSERT id, date, table, time, confirmed, user_name, email_address.
+
+Admin Functions:
+1. SELECT all, show all reservations.
+2. INSERT all, cancel/change any reservation.
+
+
+Website tools:
+<input type="date">
+Ajax (Asynchronous JavaScript and XML)
+To change Asynchronous data of a website
+Use background-attachment: fixed; on images to make the website smother
+
+
+Needed programming language:
+- HTML
+- CSS
+- Javascript
+- PHP
+- mySQL
+

@@ -1,6 +1,26 @@
 <div class="menus-container">
     <div class="background-image" style="background-image: url(images/the-menu/menu-kitchen.webp);"></div>
     <h2>THE MENU</h2>
+
+<style>
+ul {
+display: flex;
+list-style: none;
+}
+    li {
+
+    }
+</style>
+
+    <ul>
+        <li>Eintrag 1</li>
+        <li>Eintrag 2</li>
+        <li>Eintrag 3</li>
+        <li>Eintrag 4</li>
+        <li>Eintrag 5</li>
+    </ul>
+
+
     <div class="menu-section">
 
         <div class="menu-introduction-left">

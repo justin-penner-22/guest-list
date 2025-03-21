@@ -14,7 +14,7 @@
 }
 
 
-/* Themes ********************************************************************************************************/
+/* Themes */
 .background-image {
     background-attachment: fixed;
     background-size: cover;

@@ -12,7 +12,8 @@ if(isset($_GET['p'])){
 }
 else{
     include "components/main_slider.php";
-    include "components/welcome-section.php";
+    include "components/welcome.php";
+    include "components/menus.php";
 }
 
 
