@@ -1,113 +1,113 @@
 //slider
 let slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
-    showSlides(slideIndex);
-    autoSlide();
+  showSlides(slideIndex);
+  autoSlide();
 });
 
-
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slides");
+  let i;
+  let slides = document.getElementsByClassName("slides");
 
-    // Reset slideIndex if it exceeds the number of slides
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    // Set slideIndex to the last slide if n is less than 1
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    // Hide all slides
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-        slides[i].style.opacity = 0;
-        slides[i].style.visibility = "hidden";
-    }
+  // Reset slideIndex if it exceeds the number of slides
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  // Set slideIndex to the last slide if n is less than 1
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+    slides[i].style.opacity = 0;
+    slides[i].style.visibility = "hidden";
+  }
 
-    // Display the current slide
-    slides[slideIndex - 1].classList.add("active");
-    slides[slideIndex - 1].style.opacity = 1;
-    slides[slideIndex - 1].style.visibility = "visible";
+  // Display the current slide
+  slides[slideIndex - 1].classList.add("active");
+  slides[slideIndex - 1].style.opacity = 1;
+  slides[slideIndex - 1].style.visibility = "visible";
 }
 
-
 function autoSlide() {
-    autoSlideInterval = setInterval(() => plusSlides(1), 8000);
+  autoSlideInterval = setInterval(() => plusSlides(1), 8000);
 }
 
 //fetch reservation data
 async function fetchReservations() {
-    let response = await fetch("http://localhost/guest-list/Ajax/test.php");
+  let response = await fetch("http://localhost/guest-list/Ajax/test.php");
 
-    return await response.json();
+  return await response.json();
 }
-
 
 //display database
 async function reservationData() {
+  let reservations = await fetchReservations(); // Asynchrone Funktion, um Reservierungen abzurufen
+  console.log(reservations);
 
-    let reservations = await fetchReservations();  // Asynchrone Funktion, um Reservierungen abzurufen
-    console.log(reservations);
+  function displayData(reservations) {
+    const outputElement = document.getElementById("demo"); // Das Ziel-Element für die Ausgabe
+    outputElement.innerHTML = ""; // Leert den Inhalt von 'outputElement'
 
-    function displayData(reservations) {
-        const outputElement = document.getElementById("demo"); // Das Ziel-Element für die Ausgabe
-        outputElement.innerHTML = ""; // Leert den Inhalt von 'outputElement'
+    //Erstellen der Tabelle
+    const table = document.createElement("table");
 
+    const thead = table.createTHead();
+    const headerRow = thead.insertRow();
+    const headers = [
+      "Table",
+      "Name",
+      "Confirmed",
+      "Time",
+      "Date",
+      "Email",
+      "ID",
+    ];
 
-        //Erstellen der Tabelle
-        const table = document.createElement("table");
+    headers.forEach((headerText) => {
+      const headerCell = document.createElement("th");
+      headerCell.textContent = headerText;
+      headerRow.appendChild(headerCell);
+    });
 
-        const thead = table.createTHead();
-        const headerRow = thead.insertRow();
-        const headers = ["Table", "Name", "Confirmed", "Time", "Date", "Email", "ID"];
+    // Erstelle den Tabellenkörper (tbody)
+    const tbody = table.createTBody();
 
-        headers.forEach(headerText => {
-            const headerCell = document.createElement("th");
-            headerCell.textContent = headerText;
-            headerRow.appendChild(headerCell);
-        });
+    // Erstelle für jede Reservierung eine neue Tabellenzeile
+    reservations.forEach((reservation) => {
+      const row = tbody.insertRow();
 
-        // Erstelle den Tabellenkörper (tbody)
-        const tbody = table.createTBody();
+      const tableCell = row.insertCell();
+      tableCell.textContent = reservation.table;
 
-        // Erstelle für jede Reservierung eine neue Tabellenzeile
-        reservations.forEach(reservation => {
-            const row = tbody.insertRow();
+      const nameCell = row.insertCell();
+      nameCell.textContent = reservation.user_name;
 
-            const tableCell = row.insertCell();
-            tableCell.textContent = reservation.table;
+      const confirmedCell = row.insertCell();
+      confirmedCell.textContent = reservation.confirmed;
 
-            const nameCell = row.insertCell();
-            nameCell.textContent = reservation.user_name;
+      const timeCell = row.insertCell();
+      timeCell.textContent = reservation.time;
 
-            const confirmedCell = row.insertCell();
-            confirmedCell.textContent = reservation.confirmed;
+      const dateCell = row.insertCell();
+      dateCell.textContent = reservation.date;
 
-            const timeCell = row.insertCell();
-            timeCell.textContent = reservation.time;
+      const email_addressCell = row.insertCell();
+      email_addressCell.textContent = reservation.email_address;
 
-            const dateCell = row.insertCell();
-            dateCell.textContent = reservation.date;
+      const idCell = row.insertCell();
+      idCell.textContent = reservation.id;
+    });
 
-            const email_addressCell = row.insertCell();
-            email_addressCell.textContent = reservation.email_address;
+    // Füge die Tabelle zum DOM hinzu
+    outputElement.appendChild(table);
+  }
 
-            const idCell = row.insertCell();
-            idCell.textContent = reservation.id;
-        });
-
-        // Füge die Tabelle zum DOM hinzu
-        outputElement.appendChild(table);
-    }
-
-    // Aufruf der Funktion zur Anzeige der Reservierungen
-    displayData(reservations);
-
+  // Aufruf der Funktion zur Anzeige der Reservierungen
+  displayData(reservations);
 }
-
-
