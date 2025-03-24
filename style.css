@@ -62,8 +62,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
-  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .nav-list {
@@ -121,7 +121,7 @@ td {
   padding: 8px;
 }
 
-/* Slideshow */
+/* Slideshow ***************************************************************************************/
 header {
   position: relative;
   width: 100%;
@@ -205,7 +205,7 @@ nav {
   align-items: center;
 }
 
-/** welcome section **/
+/** welcome section ********************************************************************************/
 .welcome-container {
   display: flex;
   justify-content: space-between;
@@ -231,7 +231,7 @@ nav {
 
 .welcome-text p {
   display: inline-block;
-  padding: 10px;
+  padding: 24px;
   background-color: #eeeeee;
   border-radius: 5px;
   text-align: left;
@@ -242,45 +242,59 @@ nav {
 
 .welcome-container img {
   border-radius: 10px;
+  height: 25vh;
+  width: auto;
 }
 
-/** menu section **/
+/** menu section ************************************************************************************/
 .menus-container {
-  background-color: lightcoral;
   width: 100%;
   color: var(--main-brown);
-  height: 200vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  justify-self: center;
 }
 
 .menus-container h2 {
   font-size: 46px;
   justify-self: center;
+  text-shadow: #000000 1px 1px 1px;
+  text-decoration: var(--main-brown) underline;
 }
 
-.menu-introduction-left {
+.menu-section {
+  color: var(--main-brown);
+}
+
+.menu-introduction-left,
+.menu-introduction-right {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: lightsalmon;
   height: 40vh;
-  border-bottom: var(--main-blue) solid 1px;
+  border-bottom: double 10px;
 }
 
 .menu-introduction-right {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: lightsalmon;
-  height: 40vh;
   flex-direction: row-reverse;
-  border-bottom: var(--main-blue) solid 1px;
-}
-.menu-introduction-text {
-  width: 25%;
-  height: auto;
 }
 
-/** Menu image **/
+.menu-introduction-text {
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  padding: 24px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 18px;
+  margin: 0;
+  line-height: 30px;
+}
+
 .image-container {
   position: relative;
   border-radius: 10px;
@@ -295,12 +309,36 @@ nav {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 100%;
   height: auto;
   transform: scale(0);
   transition: 0.3s ease;
+}
+
+.menu-info-card-left,
+.menu-info-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.menu-info-card-right {
+  align-items: flex-end;
+}
+
+.menu-section h3 {
+  font-size: 24px;
+  padding: 12px;
+  margin: 0;
+}
+
+.menu-subtext {
+  padding-left: 24px;
+  font-size: 18px;
 }
 
 .menu-details {
@@ -311,10 +349,13 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  text-shadow: #000000 1px 1px 1px;
 }
 
 .menu-image {
   display: block;
+  height: 25vh;
+  width: auto;
 }
 
 /** table map **/

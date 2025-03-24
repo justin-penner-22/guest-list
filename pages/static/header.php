@@ -13,7 +13,7 @@
 <nav>
     <div class="container">
         <div class="nav-list">
-            <a  href="/guest-list"><img class="logo", src="images/logo/logo-no-background-blue.svg"></a>
+            <a  href="/guest-list"><img class="logo", src="graphics/logo/logo-no-background-blue.svg"></a>
             <ul>
                 <li><a href="?p=reservations" class="nav-btn">Reservierungen</a></li>
                 <li><a href="?p=dishes" class="nav-btn">Speisen und Getränke</a></li>
