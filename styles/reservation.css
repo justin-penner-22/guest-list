@@ -1,0 +1,206 @@
+/*table-reservation-data*/
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+td {
+  padding: 8px;
+}
+
+/** table map **/
+.map {
+  height: 72vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  text-align: center;
+  border: solid 1px black;
+}
+
+#entrance {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#table-1 {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-2 {
+  grid-area: 1 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-3 {
+  grid-area: 1 / 4 / 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-4 {
+  grid-area: 1 / 5 / 3 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-5 {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-6 {
+  grid-area: 4 / 1 / 5 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-7 {
+  grid-area: 5 / 1 / 6 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-8 {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-9 {
+  grid-area: 4 / 2 / 5 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-10 {
+  grid-area: 5 / 2 / 6 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-11 {
+  grid-area: 4 / 3 / 5 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-12 {
+  grid-area: 5 / 3 / 6 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-13 {
+  grid-area: 3 / 4 / 4 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-14 {
+  grid-area: 4 / 4 / 5 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-15 {
+  grid-area: 5 / 4 / 6 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-16 {
+  grid-area: 3 / 5 / 4 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-17 {
+  grid-area: 4 / 5 / 5 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-18 {
+  grid-area: 5 / 5 / 6 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lobby {
+  grid-area: 2 / 3 / 4 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.seat2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chair-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chair {
+  display: block;
+  height: 3.5vh;
+  width: 3.5vh;
+  background-color: var(--main-light-bron);
+}
+
+.table6 {
+  display: block;
+  height: 10vh;
+  width: 20vh;
+  background-color: var(--res-main-brown);
+  border: 2px solid black;
+}
+
+.table6:hover {
+  background-color: var(--main-dark-green);
+}
+
+.table2 {
+  display: block;
+  height: 7vh;
+  width: 7vh;
+  background-color: var(--res-main-brown);
+  border: 2px solid black;
+}
+
+.table2:hover {
+  background-color: var(--main-dark-green);
+}

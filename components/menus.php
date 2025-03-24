@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="menu-introduction-right">
+        <div class="menu-introduction-right-last">
             <div class="image-container">
                 <img src="images/the-menu/fourth-course.jpg" class="menu-image">
                 <div class="image-overlay">
@@ -71,3 +71,4 @@
 
     </div>
 </div> 
+<div class="background-image" style="background-image: url(images/the-menu/forest1.webp);"></div>
