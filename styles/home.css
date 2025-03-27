@@ -99,6 +99,20 @@ nav {
   justify-content: space-evenly;
   height: 100%;
   width: 50%;
+  animation: welcome-text ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes welcome-text {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .welcome-text h2 {
@@ -121,6 +135,20 @@ nav {
   border-radius: 10px;
   height: 25vh;
   width: auto;
+  animation: welcome-img ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes welcome-img {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /** menu section ************************************************************************************/
@@ -138,8 +166,6 @@ nav {
 .menus-container h2 {
   font-size: 46px;
   justify-self: center;
-  text-shadow: #000000 1px 1px 1px;
-  text-decoration: var(--main-brown) underline;
 }
 
 .menu-section {
@@ -153,10 +179,29 @@ nav {
   align-items: center;
   height: 40vh;
   border-bottom: double 10px;
+  animation: menu-right ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
+}
+
+@keyframes menu-right {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(40%);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
 
 .menu-introduction-right {
   flex-direction: row-reverse;
+  animation: menu-left ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
 }
 
 .menu-introduction-right-last {
@@ -165,6 +210,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 40vh;
+  animation: menu-left ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
+}
+
+@keyframes menu-left {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-40%);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
 
 .menu-introduction-text {
@@ -184,6 +245,9 @@ nav {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  animation: menu-img ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
 }
 
 .image-container:hover .image-overlay {

@@ -30,8 +30,8 @@
       <ul class="footer-list">
         <li class="footer-data"><a href="https://www.facebook.com/" class="footer-icon"><img src="graphics/icons/facebook-logo.svg" class="footer-social-media"></a></li>
         <li class="footer-data"><a href="https://www.youtube.com/" class="footer-icon"><img src="graphics/icons/youtube-logo.svg" class="footer-social-media"></a></li>
-        <li class="footer-data"><a href="?https://www.instagram.com/" class="footer-icon"><img src="graphics/icons/instagram-logo.svg" class="footer-social-media"></a></li>
-        <li class="footer-data"><a href="?https://www.tiktok.com/" class="footer-icon"><img src="graphics/icons/tiktok-logo.svg" class="footer-social-media"></a></li>
+        <li class="footer-data"><a href="https://www.instagram.com/" class="footer-icon"><img src="graphics/icons/instagram-logo.svg" class="footer-social-media"></a></li>
+        <li class="footer-data"><a href="https://www.tiktok.com/" class="footer-icon"><img src="graphics/icons/tiktok-logo.svg" class="footer-social-media"></a></li>
       </ul>
     </div>
   </div>
