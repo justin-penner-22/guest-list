@@ -56,6 +56,65 @@ nav {
   transform: scaleX(1);
 }
 
+/*toggle menu*******************************************************************************/
+.small-nav {
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu */
+#my-links {
+  display: none;
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+  z-index: 1;
+  background-color: #eeeeee;
+  align-items: start;
+  justify-items: end;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.icon-burger {
+  height: 6vh;
+  width: auto;
+  display: block;
+}
+
+.nav-btn-home {
+  font-weight: bold;
+}
+
+#my-links a {
+  color: var(--main-brown);
+  text-decoration: none;
+  display: block;
+  padding: 12px;
+  font-size: 2.2rem;
+}
+
+#my-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--main-blue);
+}
+
+@media (max-width: 1600px) {
+  .nav-btn {
+    display: none;
+  }
+  .small-nav {
+    display: inline-block;
+  }
+  .menus-container {
+    display: none;
+  }
+  .footer-logo {
+    display: none;
+  }
+}
+
 /*footer********************************************************************************************/
 footer {
   width: 100%;
@@ -93,7 +152,7 @@ footer {
 }
 
 .footer-data {
-  padding-top: 24px;
+  padding-top: 16px;
 }
 
 .footer-link {
@@ -103,7 +162,6 @@ footer {
   align-items: center;
   display: inline-block;
   font-size: 16px;
-  line-height: 6px;
   text-decoration: none;
   color: var(--main-brown);
 }

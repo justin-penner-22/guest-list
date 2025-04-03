@@ -91,14 +91,14 @@ nav {
   padding: 5% 0 5% 0;
   width: 70%;
   color: #674930;
+  height: auto;
+  gap: 12px;
 }
 
 .welcome-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
-  width: 50%;
   animation: welcome-text ease-in-out;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
@@ -126,7 +126,7 @@ nav {
   background-color: #eeeeee;
   border-radius: 5px;
   text-align: left;
-  font-size: 18px;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
   margin: 0;
   line-height: 30px;
 }
@@ -138,6 +138,19 @@ nav {
   animation: welcome-img ease-out;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
+}
+
+@media (max-width: 2100px) {
+  .welcome-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 2100px) {
+  .welcome-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @keyframes welcome-img {
@@ -173,12 +186,14 @@ nav {
 }
 
 .menu-introduction-left,
-.menu-introduction-right {
+.menu-introduction-right,
+.menu-introduction-right-last {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40vh;
+  height: auto;
   border-bottom: double 10px;
+  flex-wrap: wrap;
   animation: menu-right ease-out;
   animation-timeline: view();
   animation-range: entry 0 cover 25%;
@@ -197,7 +212,8 @@ nav {
   }
 }
 
-.menu-introduction-right {
+.menu-introduction-right,
+.menu-introduction-right-last {
   flex-direction: row-reverse;
   animation: menu-left ease-out;
   animation-timeline: view();
@@ -205,14 +221,7 @@ nav {
 }
 
 .menu-introduction-right-last {
-  flex-direction: row-reverse;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40vh;
-  animation: menu-left ease-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 25%;
+  border-bottom: none;
 }
 
 @keyframes menu-left {
@@ -273,6 +282,7 @@ nav {
   height: 40vh;
   width: 50%;
   align-items: flex-start;
+  padding: 24px 0 24px 0;
 }
 
 .menu-info-card-right {
@@ -305,4 +315,14 @@ nav {
   display: block;
   height: 25vh;
   width: auto;
+}
+
+@media (max-width: 1950px) {
+  .menu-info-card-right {
+    width: 100%;
+    padding-top: 24px;
+  }
+  .menu-info-card-left {
+    width: 100%;
+  }
 }

@@ -16,7 +16,7 @@
     <div class="footer-section">
       <h3 class="footer-subheading">Service</h3>
       <ul class="footer-list">
-        <li class="footer-data"><a href="https://maps.app.goo.gl/yFy38TyMnEe3Ahwc9" class="footer-link">Dorfstraße 8<br><br><br>16818 Pfalzheim</a></li>
+        <li class="footer-data"><a href="https://maps.app.goo.gl/yFy38TyMnEe3Ahwc9" class="footer-link">Dorfstraße 8<br>16818 Pfalzheim</a></li>
         <li class="footer-data"><img src="graphics/icons/phone.svg" class="footer-icon">+49 (0) 1234 56 78 91</li>
         <li class="footer-data"><img src="graphics/icons/printer.svg" class="footer-icon">+49 (0) 9876 65 43 21</li>
         <li class="footer-data"><img src="graphics/icons/mail.svg" class="footer-icon"><a href="maito:info@max-musterman.de" class="footer-link">info@max-musterman.de</a></li>
@@ -36,5 +36,9 @@
     </div>
   </div>
 </footer>
+
+<script>
+
+</script>
 </body>
 </html>

@@ -1,4 +1,14 @@
-//slider
+/*small menu*************************************************************************************/
+function showMenu() {
+  var x = document.getElementById("my-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/*slider*****************************************************************************************/
 let slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
   showSlides(slideIndex);
@@ -38,7 +48,7 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => plusSlides(1), 8000);
 }
 
-//fetch reservation data
+/*fetch reservation data******************************************************************************************/
 async function fetchReservations() {
   let response = await fetch("http://localhost/guest-list/Ajax/test.php");
 
