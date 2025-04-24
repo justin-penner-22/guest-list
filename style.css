@@ -23,6 +23,11 @@
 }
 
 /* Themes ******************************************************************************************/
+
+.bold {
+  font-weight: bold;
+}
+
 .background-image {
   background-attachment: fixed;
   background-size: cover;
@@ -36,7 +41,6 @@ body {
   font-family: montserrat, sans-serif;
   font-size: 1rem;
   margin: 0;
-  background-color: #ffffef;
 }
 
 .container {
