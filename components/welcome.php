@@ -2,7 +2,8 @@
     <div class="welcome-container">
         <div class="welcome-text">
             <h2>Willkommen im Saruman </h2>
-            <p>Seid unserer Eröffnung im Jahr 2017 verwöhnen wir<br> die Stadt Frankfurt mit luxuriöse und vegetarische Genusserlebnisse. In unserem kleinen, eleganten Ambiente servieren wir kreative und luxuriöse Köstlichkeiten. Unsere mit Liebe und Raffinesse zubereiteten Gerichte vereinen beste Zutaten mit außergewöhnlichen Aromen. Lassen Sie sich von unserer feinen Küche und der persönlichen Atmosphäre verwöhnen.</p>
+            <p>Willkommen im Hawthorn – wo Kulinarik zur Kunst wird, und jede Zutat eine Geschichte erzählt.
+            Erleben Sie ein einzigartiges Degustationsmenü auf einer abgelegenen Insel, kuratiert mit chirurgischer Präzision und serviert in einer Welt, in der Genuss, Kontrolle und Hingabe eine neue Bedeutung bekommen.
         </div>
         <img alt="staff" src="images/the-menu/chef-staff4.png">
     </div>

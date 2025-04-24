@@ -1,0 +1,22 @@
+.chef-staff-img {
+  width: 100%;
+  height: auto;
+}
+
+.container-about-us {
+  display: flex;
+  justify-content: center;
+}
+
+.chef-staff-text {
+  font-size: 1.2em;
+  color: var(--main-brown);
+  margin: 46px 0;
+  align-content: center;
+  text-align: center;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
