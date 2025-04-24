@@ -1,6 +1,17 @@
 .container-reviews {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: blue;
+  background-color: #eeeeee;
+  align-items: center;
+  color: var(--main-brown);
+  border-radius: 0%;
+  padding: 24px 78px 24px 78px;
+  border: var(--main-blue) solid 1px;
+  margin: 50px;
+}
+
+.container-reviews p {
+  padding: 0 24 0 24;
+  text-align: center;
+  gap: 12px;
 }
