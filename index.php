@@ -13,11 +13,11 @@ if(isset($_GET['p'])){
 else{
     include "components/main_slider.php";
     include "components/welcome.php";
-    include "components/menus.php";
+    //include "components/menus.php";
 }
 
 
-include "pages/static/footer.php";
+// include "pages/static/footer.php";
 
 
 /* Generate database table

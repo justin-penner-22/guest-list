@@ -21,17 +21,23 @@
   --main-blue: #287ab3;
   --main-brown: #674930;
 }
+/* Gobal Styling ******************************************************************************************/
+.h2 {
+  font-size: clamp(1.5rem, 0.9032rem + 2.5806vw, 4rem);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Themes ******************************************************************************************/
-
 .bold {
   font-weight: bold;
 }
 
 .background-image {
-  background-attachment: fixed;
   background-size: cover;
-  background-color: #000000;
   height: 60vh;
   display: block;
 }

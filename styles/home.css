@@ -16,7 +16,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-attachment: fixed;
 }
 
 .slides.active {
@@ -25,22 +24,16 @@ header {
 }
 
 .slider-background-image {
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000000;
-  height: 88vh;
   display: block;
-}
-
-.slides img {
+  max-width: 100%;
   width: 100%;
-  height: 88vh;
+  height: auto;
 }
 
 .prev {
   cursor: pointer;
   position: absolute;
-  top: 97%;
+  top: 90%;
   left: 0;
   width: auto;
   padding: 12px;
@@ -57,7 +50,7 @@ header {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 97%;
+  top: 90%;
   right: 0;
   width: auto;
   padding: 12px;
