@@ -6,6 +6,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .slides {
@@ -92,20 +93,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  animation: welcome-text ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-
-@keyframes welcome-text {
-  from {
-    opacity: 0;
-    transform: translateX(-20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .welcome-text h2 {
@@ -128,9 +115,6 @@ nav {
   border-radius: 10px;
   height: 25vh;
   width: auto;
-  animation: welcome-img ease-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
 }
 
 @media (max-width: 2100px) {
@@ -146,17 +130,6 @@ nav {
   }
 }
 
-@keyframes welcome-img {
-  from {
-    opacity: 0;
-    transform: translateX(20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /** menu section ************************************************************************************/
 .menus-container {
   width: 100%;
@@ -167,6 +140,7 @@ nav {
   flex-direction: column;
   width: 70%;
   justify-self: center;
+  margin: auto;
 }
 
 .menus-container h2 {
@@ -176,6 +150,7 @@ nav {
 
 .menu-section {
   color: var(--main-brown);
+  align-self: center;
 }
 
 .menu-introduction-left,
@@ -187,47 +162,15 @@ nav {
   height: auto;
   border-bottom: double 10px;
   flex-wrap: wrap;
-  animation: menu-right ease-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 25%;
-}
-
-@keyframes menu-right {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(40%);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-  }
 }
 
 .menu-introduction-right,
 .menu-introduction-right-last {
   flex-direction: row-reverse;
-  animation: menu-left ease-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 25%;
 }
 
 .menu-introduction-right-last {
   border-bottom: none;
-}
-
-@keyframes menu-left {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-40%);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-  }
 }
 
 .menu-introduction-text {

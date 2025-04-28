@@ -1,6 +1,6 @@
 
 <footer>
-  <div class="container">
+  
     <div class="footer-section"><a href="/guest-list"><img src="graphics/logo/logo-no-background-blue.svg" class="footer-logo"></a></div>
     <div class="footer-section">
       <h3 class="footer-subheading">Sites</h3>
@@ -34,7 +34,7 @@
         <li class="footer-data"><a href="https://www.tiktok.com/" class="footer-icon"><img src="graphics/icons/tiktok-logo.svg" class="footer-social-media"></a></li>
       </ul>
     </div>
-  </div>
+  
 </footer>
 
 <script>

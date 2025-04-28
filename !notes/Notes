@@ -40,3 +40,10 @@ Needed programming language:
 - Javascript
 - PHP
 - mySQL
+
+Upgrades:
+
+- Animation of spinning plates in the dishes page
+- Highlithing the pages the user is on
+- sticky Navbar when scrolling down
+- have a accordion on the carrier page about different carriers
