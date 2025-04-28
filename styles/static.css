@@ -146,6 +146,11 @@ footer {
   padding: 0;
 }
 
+.footer-list-social-media {
+  list-style-type: none;
+  padding: 0;
+}
+
 .footer-data {
   padding-top: 16px;
 }
@@ -191,5 +196,9 @@ footer {
   }
   .footer-logo {
     display: none;
+  }
+  .footer-list-social-media {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

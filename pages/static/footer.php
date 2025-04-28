@@ -27,7 +27,7 @@
     </div>
     <div class="footer-section">
       <h3 class="footer-subheading">Social Media</h3>
-      <ul class="footer-list">
+      <ul class="footer-list-social-media">
         <li class="footer-data"><a href="https://www.facebook.com/" class="footer-icon"><img src="graphics/icons/facebook-logo.svg" class="footer-social-media"></a></li>
         <li class="footer-data"><a href="https://www.youtube.com/" class="footer-icon"><img src="graphics/icons/youtube-logo.svg" class="footer-social-media"></a></li>
         <li class="footer-data"><a href="https://www.instagram.com/" class="footer-icon"><img src="graphics/icons/instagram-logo.svg" class="footer-social-media"></a></li>
