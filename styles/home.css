@@ -97,7 +97,6 @@ nav {
 
 .welcome-text h2 {
   margin: 0;
-  border-bottom: var(--main-brown) solid 1px;
 }
 
 .welcome-text p {
@@ -256,6 +255,13 @@ nav {
   display: block;
   max-height: 25vh;
   width: auto;
+}
+
+.menu-button-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
 }
 
 @media (max-width: 1950px) {

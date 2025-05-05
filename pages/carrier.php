@@ -1,6 +1,6 @@
 <div class="container-max">
   <div class="container">
-    <div>
+    <div class="carrier-container">
       <h2>WIR STELLEN Ein</h2> 
       Werde Teil von Hawthorn
       

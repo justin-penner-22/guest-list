@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <div class="menu-button-box"><button class="btn-secondary">JETZT RESERVIEREN</button></div>
 </div> 
 <div class="background-image" style="background-image: url(images/the-menu/forest1.webp);"></div>
