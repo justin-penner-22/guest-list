@@ -1,3 +1,29 @@
+/**Active Page styling **************************************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".nav-btn");
+
+  function getCurrentPage() {
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get("p") || "home";
+    return p;
+  }
+  const currentPage = getCurrentPage();
+
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+    const parts = href.split("?");
+
+    let linkPage = "home";
+    if (parts[1]) {
+      linkPage = new URLSearchParams(parts[1]).get("p") || "home";
+    }
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+
 /*small menu*************************************************************************************/
 function showMenu() {
   var x = document.getElementById("my-links");
