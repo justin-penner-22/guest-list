@@ -130,6 +130,12 @@ nav {
   }
 }
 
+@media (max-width: 425px) {
+  .welcome-container {
+    width: 95%;
+  }
+}
+
 /** menu section ************************************************************************************/
 .menus-container {
   width: 100%;
@@ -159,9 +165,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
-  border-bottom: double 10px;
+  border-bottom: solid 2px;
   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
 }
 
 .menu-introduction-right,
@@ -190,9 +198,6 @@ nav {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  animation: menu-img ease-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 20%;
 }
 
 .image-container:hover .image-overlay {
@@ -215,7 +220,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 40vh;
+  height: auto;
   width: 50%;
   align-items: flex-start;
   padding: 24px 0 24px 0;
@@ -249,7 +254,7 @@ nav {
 
 .menu-image {
   display: block;
-  height: 25vh;
+  max-height: 25vh;
   width: auto;
 }
 
@@ -260,5 +265,14 @@ nav {
   }
   .menu-info-card-left {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .menus-container {
+    width: 95%;
+  }
+  .menu-introduction-text {
+    width: auto;
   }
 }
