@@ -1,16 +1,35 @@
+<h2 class="about-us-title">Hawthorn</h2>
 <div class="container-max">
-  <div class="container">
-    <img src="images/the-menu/chef-staff9.webp" alt="chef-staff" class="chef-staff-img">
-  </div>
+<p class="about-us-title-text">Hawthorn ist kein gewöhnliches Restaurant – es ist ein heiliger Ort kulinarischer Disziplin</p>
 </div>
+   
 
 <div class="container-max">
   <div class="container">
-      <div class="container-about-us">
-      <p class="chef-staff-text">
-        <span class="bold">Hawthorn</span> ist kein gewöhnliches Restaurant – es ist ein heiliger Ort kulinarischer Disziplin, geführt von einem Team, das Kochen nicht als Beruf, sondern als Opfergabe versteht. An der Spitze steht Chef Slowik, ein Visionär, der jedes Menü wie ein Kunstwerk komponiert – präzise, durchdacht, kompromisslos. Für ihn ist jede Zutat eine Erinnerung, jede Technik ein Statement, jede Darreichung ein Ritual. Die Küche ist sein Tempel – und jeder Gang eine Inszenierung, die mehr erzählt als bloßen Geschmack. <br><br><span class="bold">Die Köche</span>, die an seiner Seite arbeiten, folgen ihm mit einer Loyalität, die über das Berufliche hinausgeht. Sie leben auf der Insel, sie schlafen in Reih und Glied – und sie kochen mit einer fast kultischen Hingabe. Jeder Handgriff, jeder Schnitt, jedes Anrichten geschieht synchron, in perfekter Stille, als wären sie Teil eines größeren Ganzen. Denn bei Hawthorn geht es nicht darum, satt zu werden – sondern darum, verstanden zu werden. Hier wird Essen zum Medium. Und wer Platz nimmt, wird Teil einer Erfahrung, die mehr ist als ein Mahl – es ist eine Prüfung, ein Spiegel, eine Wahrheit.
-      </p>
+    <div class="grid-about-us">
+      <h2 class="about-us-div1">Wir sind ein abgelegenes Luxusrestaurant, das Genuss in ein tödliches Spiel aus Macht, Kontrolle und Moral verwandelt.</h2>
+      <image src="images/others/chef-staff7.png" alt="chef-staff" class="about-us-div2">
+      <image src="images/others/first-course3.png" alt="chef-staff" class="about-us-div3">
+      <image src="images/others/chef-staff9.jpg" alt="chef-staff" class="about-us-div4">
+      <p class="about-us-div5">Im Film The Menu leben die Köche unter der strengen Führung von Chef Slowik auf einer abgelegenen Insel, völlig isoliert von der Außenwelt. Ihr Alltag ist durchgetaktet: frühes Aufstehen, präzise Vorbereitung und völlige Hingabe an die Perfektion jedes Gerichts. Freizeit existiert kaum – ihr Leben ist komplett dem kulinarischen Erlebnis gewidmet, das sie für exklusive Gäste erschaffen. Die Hierarchie in der Küche ist strikt, und jede Abweichung vom Ablauf wird mit strenger Disziplin geahndet.</p>
+      <div class="about-us-div6">
+        <div>
+          <p>Mitarbeiter<p>
+          <h2>50+</h2>
+        </div>
+        <div>
+          <p>Standorte<p>
+          <h2>22+</h2>
+        </div>
+        <div>
+          <p>Kunden pro Jahr<p>
+          <h2>5000+</h2>
+        </div>
+        <div>
+          <p>Gründung<p>
+          <h2>2015+</h2>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
