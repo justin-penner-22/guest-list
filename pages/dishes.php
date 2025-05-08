@@ -5,8 +5,8 @@
 
 <div class="container-max">
   <div class="container">
-    <div class="parent">
-    <div class=><img src="images/dishes/dish1.png" alt="dish1" class="dish-image"></div>
+    <div class="dishes-box">
+    <div class="dishes-food"><img src="images/dishes/dish1.png" alt="dish1" class="dish-image"></div>
     <div class="dishes-text-reverse">Ein Geschmacksfeuerwerk:<br><span class="bold">UNSER PAD THAI</span> Ein Erlebnis, das dich auf eine kulinarische Reise nach Thailand entführt. Zarte, in feuriger Marinade geschwenkte Garnelen treffen auf perfekt gegarte Reisnudeln, die mit knackigen Erdnüssen, frischem Koriander und zarten Frühlingszwiebeln zu einem harmonischen Tanz der Aromen verschmelzen. Die spritzige Limette und knackige Sojasprossen runden das Geschmackserlebnis mit einer aufregenden Frische ab – eine unvergleichliche Mischung aus süß, sauer, salzig und leicht scharf. Ein absolutes Muss für Genießer, die das Besondere suchen!</div>
     <div class="dishes-food"><img src="images/dishes/dish2.png" alt="dish2" class="dish-image"></div>
     <div class="dishes-text">Ein Fest für die Sinne:<br><span class="bold">UNSER GRILLSTEAK & GEMÜSE </span> Tauche ein in ein kulinarisches Erlebnis voller Raffinesse und Geschmack. Zart gegrilltes Steak mit charakteristischen Grillstreifen und rauchiger Note trifft auf eine herzhafte Begleitung aus goldbraun gerösteten Kartoffeln, karamellisierten Möhren und aromatischen Pilzen. Ein Zweig frischer Rosmarin rundet das Gericht ab und verleiht ihm einen mediterranen Touch. Jeder Bissen vereint würzige, süßliche und deftige Nuancen – wie ein Sommerabend auf dem Teller.</div>

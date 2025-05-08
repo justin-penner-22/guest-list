@@ -34,10 +34,50 @@
   align-content: end;
 }
 
-.parent {
+.dishes-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 8px;
   margin-top: 24px;
+}
+
+@media (max-width: 1700px) {
+  .dishes-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .dishes-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 400px 300px;
+    margin-bottom: 32px;
+  }
+  .dishes-text,
+  .dishes-text-reverse {
+    font-size: 1rem;
+    text-align: top;
+  }
+  .dish-image {
+    max-width: 60%;
+  }
+  .dishes-food {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 430px) {
+  .dishes-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+  .dish-image {
+    max-width: 100%;
+  }
 }
