@@ -1,6 +1,6 @@
 .location-container {
   display: flex;
-  justify-content: space-between;
+  gap: 32px;
   width: 100%;
   margin: 64px 0;
 }
@@ -16,6 +16,11 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  margin: 0;
+}
+
+.location-time h2 {
+  margin-top: 0;
 }
 
 .location-image1 {
@@ -56,7 +61,7 @@
   margin: auto;
   color: var(--main-brown);
   font-size: 1.3rem;
-  padding: 64px 0;
+  padding: 96px 0;
   text-align: center;
 }
 
