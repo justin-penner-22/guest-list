@@ -5,10 +5,13 @@
   display: none;
 }
 
-.dish-images {
+.dish-image {
   width: 100%;
   height: auto;
-  animation: spining 15s infinite;
+}
+
+.rotate-once {
+  animation: spining 5s ease-in-out 1;
 }
 
 @keyframes spining {
