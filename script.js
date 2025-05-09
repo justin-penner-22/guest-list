@@ -1,25 +1,47 @@
-/**Active Page styling **************************************************************************/
-const links = document.querySelectorAll(".nav-btn");
+/**Scolling navbar ******************************************************************************/
+window.onscroll = function () {
+  scrollFunction();
+};
 
-function getCurrentPage() {
-  const params = new URLSearchParams(window.location.search);
-  const p = params.get("p") || "home";
-  return p;
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementsByTagName("nav")[0].style.padding = "0";
+    document.getElementsByTagName("nav")[0].style.height = "5vh";
+    document.getElementsByClassName("nav-list")[0].style.height = "5vh";
+    document.getElementsByClassName("logo")[0].style.height = "5vh";
+    document.getElementsByClassName("icon-burger")[0].style.height = "5vh";
+  } else {
+    document.getElementsByTagName("nav")[0].style.padding = "24px 0px";
+    document.getElementsByTagName("nav")[0].style.height = "9vh";
+    document.getElementsByClassName("nav-list")[0].style.height = "9vh";
+    document.getElementsByClassName("logo")[0].style.height = "9vh";
+    document.getElementsByClassName("icon-burger")[0].style.height = "9vh";
+  }
 }
-const currentPage = getCurrentPage();
+/**Active Page styling **************************************************************************/
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".nav-btn");
 
-links.forEach((link) => {
-  const href = link.getAttribute("href");
-  const parts = href.split("?");
-
-  let linkPage = "home";
-  if (parts[1]) {
-    linkPage = new URLSearchParams(parts[1]).get("p") || "home";
+  function getCurrentPage() {
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get("p") || "home";
+    return p;
   }
+  const currentPage = getCurrentPage();
 
-  if (linkPage === currentPage) {
-    link.classList.add("active");
-  }
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+    const parts = href.split("?");
+
+    let linkPage = "home";
+    if (parts[1]) {
+      linkPage = new URLSearchParams(parts[1]).get("p") || "home";
+    }
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
 });
 
 /*small menu*************************************************************************************/
