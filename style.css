@@ -38,6 +38,22 @@ img {
   font-weight: bold;
 }
 
+.font-normal {
+  font-size: 1rem;
+}
+
+/* buttons ******************************************************************************************/
+
+.font-color-primary {
+  color: var(--main-brown);
+  font-weight: bold;
+}
+
+.font-color-secondary {
+  color: var(--main-blue);
+  font-weight: bold;
+}
+
 .background-image {
   background-size: cover;
   height: 60vh;
@@ -47,12 +63,13 @@ img {
 .btn-primary {
   background-color: var(--main-blue);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 0.75em 1.5em;
   border: 2px solid var(--main-blue-light);
-  border-radius: 0.5em;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  width: fit-content;
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
 }

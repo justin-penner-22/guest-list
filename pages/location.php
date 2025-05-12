@@ -9,13 +9,13 @@
         <div>
           <h2>Hawthorn Blue Lagoon</h2>
           <h3>Öffnungszeiten</h3>
-          <p>Montag: Geschlossen<br>
-            Dienstag: 17:00 – 22:00 Uhr<br>
-            Mittwoch: 17:00 – 22:00 Uhr<br>
-            Donnerstag: 17:00 – 22:00 Uhr<br>
-            Freitag: 17:00 – 23:00 Uhr<br>
-            Samstag: 12:00 – 23:00 Uhr<br>
-            Sonntag: 12:00 – 21:00 Uhr
+          <p><span class="bold">Montag:</span> Geschlossen<br>
+            <span class="bold">Dienstag:</span> 17:00 – 22:00 Uhr<br>
+            <span class="bold">Mittwoch:</span> 17:00 – 22:00 Uhr<br>
+            <span class="bold">Donnerstag:</span> 17:00 – 22:00 Uhr<br>
+            <span class="bold">Freitag:</span> 17:00 – 23:00 Uhr<br>
+            <span class="bold">Samstag:</span> 12:00 – 23:00 Uhr<br>
+            <span class="bold">Sonntag:</span> 12:00 – 21:00 Uhr
           </p>
         </div>
         <img src="images/others/location1.jpg" alt="location" class="location-image1">

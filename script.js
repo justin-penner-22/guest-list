@@ -188,3 +188,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/***Accordion Carrier Page *********************************************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+  let accordion = document.getElementsByClassName("carrier-card-btn");
+
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+
+      let info = document.getElementsByClassName("carrier-card-info")[i];
+      if (info.style.maxHeight) {
+        info.style.maxHeight = null;
+        info.style.padding = "0px";
+        info.style.border = "0px";
+      } else {
+        info.style.maxHeight = info.scrollHeight + "px";
+        info.style.padding = "18px";
+        info.style.border = "var(--main-blue) 1px solid";
+        info.style.borderTop = "none";
+      }
+    });
+  }
+
+  const allInfos = document.querySelectorAll(".carrier-card-info");
+  allInfos.addEventListener("click", function () {
+    const currentInfo = this.parentElement.querySelector(".carrier-card-info");
+    allInfos.forEach((info) => {
+      if (info !== currentInfo) {
+        info.style.maxHeight = "0px";
+      }
+    });
+  });
+});
