@@ -25,6 +25,12 @@
   align-items: flex-start;
 }
 
+@media (max-width: 625px) {
+  .carrier-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 .carrier-card {
   width: 100%;
   height: auto;
@@ -47,7 +53,6 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
   font-size: 1.2rem;
   border-radius: 10px;
@@ -121,6 +126,13 @@
   margin: 32px 0 32px 0;
 }
 
+@media (max-width: 1300px) {
+  .contact-form-card {
+    width: 95%;
+    padding: 0px 8px;
+  }
+}
+
 .contact-form-card h3 {
   font-weight: normal;
   font-size: 2rem;
@@ -134,9 +146,9 @@ textarea {
   height: 50px;
   border-radius: 10px;
   border: none;
-  padding: 0 16px;
   margin-top: 16px;
   font-size: 1.2rem;
+  padding: 8px 0px 8px 8px;
 }
 
 .contact-form-card textarea {

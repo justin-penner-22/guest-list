@@ -191,32 +191,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /***Accordion Carrier Page *********************************************************************************/
 document.addEventListener("DOMContentLoaded", () => {
-  let accordion = document.getElementsByClassName("carrier-card-btn");
+  const buttons = document.querySelectorAll(".carrier-card-btn");
+  const infos = document.querySelectorAll(".carrier-card-info");
 
-  for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", function () {
-      this.classList.toggle("active");
+  buttons.forEach((btn) => {
+    btn.classList.remove("active");
+  });
 
-      let info = document.getElementsByClassName("carrier-card-info")[i];
-      if (info.style.maxHeight) {
-        info.style.maxHeight = null;
-        info.style.padding = "0px";
-        info.style.border = "0px";
-      } else {
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      const info = infos[index];
+      const isActive = info.style.maxHeight && info.style.maxHeight !== "0px";
+
+      infos.forEach((element) => {
+        element.style.maxHeight = "0px";
+        element.style.padding = "0px";
+        element.style.border = "none";
+      });
+
+      if (!isActive) {
         info.style.maxHeight = info.scrollHeight + "px";
         info.style.padding = "18px";
         info.style.border = "var(--main-blue) 1px solid";
         info.style.borderTop = "none";
-      }
-    });
-  }
-
-  const allInfos = document.querySelectorAll(".carrier-card-info");
-  allInfos.addEventListener("click", function () {
-    const currentInfo = this.parentElement.querySelector(".carrier-card-info");
-    allInfos.forEach((info) => {
-      if (info !== currentInfo) {
-        info.style.maxHeight = "0px";
+        btn.classList.add("active");
       }
     });
   });
