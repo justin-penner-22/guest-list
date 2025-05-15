@@ -8,15 +8,6 @@
 @import url(styles/location.css);
 
 :root {
-  /* reservation */
-  --main-purpel-blue: #4336ab;
-  --res-main-brown: #4c2f26;
-  --main-light-bron: #caa472;
-  --main-dark-green: #286422;
-  --main-dark-red: #800303;
-  --button-brown: #a97564;
-  --button-brown-hover: #9a5641;
-
   /* pages */
   --main-blue: #287ab3;
   --main-blue-light: #90bdde;

@@ -86,11 +86,12 @@ nav {
   right: 0;
   list-style-type: none;
   z-index: 1;
-  background-color: #eeeeee;
+  background-color: white;
   align-items: start;
   justify-items: end;
   margin-top: 24px;
   border-radius: 8px;
+  border: solid 2px var(--main-blue);
 }
 
 .icon-burger {
@@ -100,7 +101,7 @@ nav {
 }
 
 #my-links a {
-  color: var(--main-brown);
+  color: var(--main-blue);
   text-decoration: none;
   display: block;
   padding: 12px;
