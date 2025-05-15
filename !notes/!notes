@@ -1,39 +1,4 @@
-Visual Style:
-Logo color:
-
-Luxury Restaurant:
-White
-Kings blue
-
-Visual example:
-https://wraptrack.ams3.cdn.digitaloceanspaces.com/images_medium/1/328/Kenhuru-Vitrazh-Kings-Blue-3471.png
-https://roommanager.com/return-to-the-office/red-spot/
-https://www.tourmyindia.com/blog//wp-content/uploads/2018/12/BAR-PALLADIO-JAIPUR.jpg
-https://gartenlaube-marburg.de/
-
-Reservation process:
-
-1. Select if you want to reserve a duo-table ore a group table (with a button).
-2. Select a reservation date and time (today, 20:00).
-3. Select a table an the table map. Click on confirm.
-4. A pop up with a form. (first name, last name, E-mail for confirmation).
-5. Confirm the reservation.
-6. Get a conformation E-mail.
-
-User Functions: 2. SELECT date, confirmed and time. If all tables are confirmed date = blurry. If times windows are full: time = blurry. 3. SELECT table. If tables are confirmed: table = red. 4. INSERT id, date, table, time, confirmed, user_name, email_address.
-
-Admin Functions:
-
-1. SELECT all, show all reservations.
-2. INSERT all, cancel/change any reservation.
-
-Website tools:
-<input type="date">
-Ajax (Asynchronous JavaScript and XML)
-To change Asynchronous data of a website
-Use background-attachment: fixed; on images to make the website smother
-
-Needed programming language:
+## Needed programming language:
 
 - HTML
 - CSS
@@ -41,8 +6,56 @@ Needed programming language:
 - PHP
 - mySQL
 
-To-do:
--- reservation comunication back and forword
--- reservation page styling and UI
--- reservation process
--- reservation login for admins
+## Visual Style:
+
+Logo color: Blue white and brown
+Luxury Restaurant: White, Kings blue
+
+Visual example:
+https://wraptrack.ams3.cdn.digitaloceanspaces.com/images_medium/1/328/Kenhuru-Vitrazh-Kings-Blue-3471.png
+https://www.tourmyindia.com/blog//wp-content/uploads/2018/12/BAR-PALLADIO-JAIPUR.jpg
+https://gartenlaube-marburg.de/
+
+## Reservation Page:
+
+- Reservation Page with pictures and most important information
+  about the restaurant.
+- left pictures, right data and choosing options.
+  Reservation process:
+- right on top are the reservation options and beneave
+  are the data you can chose, the data (persons, date, time) will all be displayed on the same spot with the same sizes.
+- beneave those two should be extra information:
+  location, open times, price, kitchen, desscode, parking, other details.
+
+## Phone view
+
+- On top image of the restaurant
+- Title of the restaurant
+- Small data, price, kitchen type, location
+- Choosing options (persons, date, time)
+- in the end choosing box (persons, date, time)
+- beneave these I can put more detailed data
+
+## Reservation structure
+
+1. The standard view and choosing option is today and earlyiest time with 2 Persons
+2. At first you select Persons date and time
+3. Then you can click a button which pops up a formular first name, last name, E-mail for confirmation
+4. Confirm the reservation.
+5. Get a information and comfirm E-mail.
+
+## Admin Functions:
+
+1. SELECT all, show all reservations.
+2. INSERT all, cancel/change any reservation.
+3. Have a sorting option to sort data from past and furture reservations
+
+## To-do:
+
+- Database adding persons, deleting table, first and last name
+- login button on the reservatin page for admin users ore
+  maybe a user icon on the navbar
+- reservation comunication back and forword
+- reservation page styling and UI
+- reservation process
+- reservation login for admins

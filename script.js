@@ -69,6 +69,11 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
 
+  if (!slides.length) {
+    console.warn("Keine Slides gefunden.");
+    return;
+  }
+
   // Reset slideIndex if it exceeds the number of slides
   if (n > slides.length) {
     slideIndex = 1;
@@ -104,7 +109,6 @@ async function fetchReservations() {
 //display database
 async function reservationData() {
   let reservations = await fetchReservations(); // Asynchrone Funktion, um Reservierungen abzurufen
-  console.log(reservations);
 
   function displayData(reservations) {
     const outputElement = document.getElementById("demo"); // Das Ziel-Element für die Ausgabe
