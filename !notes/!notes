@@ -41,8 +41,8 @@ Needed programming language:
 - PHP
 - mySQL
 
-Upgrades:
-
-- have a accordion on the carrier page about different carriers
-- Have a responsive image grid on the Review Page with images which you can click to see the review of the dish
-- habe a better phone view of the about us page
+To-do:
+-- reservation comunication back and forword
+-- reservation page styling and UI
+-- reservation process
+-- reservation login for admins

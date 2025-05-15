@@ -1,5 +1,3 @@
-
-
 <?php
 include "pages/static/header.php";
 
@@ -18,11 +16,4 @@ else{
 
 
 include "pages/static/footer.php";
-
-
-/* Generate database table
-<button class="button-theme-brown" id="kadabra" onclick="reservationData()">AJAX</button>
-<div id="demo">Hier wird Text generiert</div>
-*/
-
 ?>

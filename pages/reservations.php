@@ -1,3 +1,16 @@
+
+
+<div class="navbar-margin"></div>
+
+<!--Generate database table-->
+<button class="btn-primary" id="kadabra" onclick="reservationData()">AJAX</button>
+<div id="demo">Hier wird Text generiert</div>
+
+
+
+
+<!--
+
 <div class="container-max">
     <div class="container-min">
         <div class="map">
@@ -166,3 +179,5 @@
         </div>
     </div>
 </div>
+
+-->
