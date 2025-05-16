@@ -1,10 +1,39 @@
-.navbar-margin {
-  padding-top: 14vh;
-}
-
 .reservation-container {
+  padding-top: 16vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 16px;
+  background-color: #eeeeee;
+}
+
+.reservation-grid-image {
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+.reservation-grid-card {
+  grid-area: 1 / 4 / 4 / 7;
+}
+
+.select-box-container {
+  position: relative;
+  width: 50%;
+}
+
+.select-box {
+  border: none;
+  appearance: none;
+  padding: 8px;
+  width: 100%;
+  color: white;
+  background-color: var(--main-blue);
+  font-size: 1.2rem;
+}
+
+.select-icon {
+  width: 24px;
+  height: auto;
+  position: absolute;
+  top: 6px;
+  right: 6px;
 }

@@ -1,4 +1,3 @@
-
 <div class="container-max">
   <div class="container">
     <div class="location-container">
@@ -27,11 +26,11 @@
 <div class="container-max">
   <div class="container">
     <div class="location-box">
-      <p class="location-text"><span class="bold">Das exklusive Restaurant Heathrow</span><br> liegt abgelegen auf einer malerischen Insel, die nur per Boot erreichbar ist. Eingebettet in unberührte Natur bietet der Standort eine atemberaubende Aussicht auf das weite, glitzernde Meer. Die salzige Meeresbrise und das sanfte Rauschen der Wellen verleihen dem kulinarischen Erlebnis eine besondere Tiefe. Wer hier speist, genießt nicht nur außergewöhnliche Gerichte, sondern auch die Ruhe und Schönheit einer fast surrealen Umgebung.</p>
+      <p class="location-text">
+        <span class="bold">
+          Das exklusive Restaurant Heathrow</span><br> liegt abgelegen auf einer malerischen Insel, die nur per Boot erreichbar ist. Eingebettet in unberührte Natur bietet der Standort eine atemberaubende Aussicht auf das weite, glitzernde Meer. Die salzige Meeresbrise und das sanfte Rauschen der Wellen verleihen dem kulinarischen Erlebnis eine besondere Tiefe. Wer hier speist, genießt nicht nur außergewöhnliche Gerichte, sondern auch die Ruhe und Schönheit einer fast surrealen Umgebung.
+      </p>
       <img src="images/others/location2.jpeg" alt="location" class="location-image2">
     </div>
   </div>
 </div>
-
-
-

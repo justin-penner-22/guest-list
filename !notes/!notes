@@ -52,10 +52,7 @@ https://gartenlaube-marburg.de/
 
 ## To-do:
 
-- Database adding persons, deleting table, first and last name
-- login button on the reservatin page for admin users ore
-  maybe a user icon on the navbar
 - reservation comunication back and forword
 - reservation page styling and UI
-- reservation process
 - reservation login for admins
+- calendar in reservation with flatpckr

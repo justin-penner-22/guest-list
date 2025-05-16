@@ -1,4 +1,3 @@
-
 <footer>
   
     <div class="footer-section"><a href="/guest-list"><img src="graphics/logo/logo-no-background-blue.svg" class="footer-logo"></a></div>
@@ -37,8 +36,5 @@
   
 </footer>
 
-<script>
-
-</script>
 </body>
 </html>

@@ -99,7 +99,18 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => plusSlides(1), 8000);
 }
 
-/*fetch reservation data******************************************************************************************/
+/*Reservation******************************************************************************************/
+flatpickr("#dateInput", {
+  minDate: "today",
+  disable: [
+    /* closed reservation from server */
+  ],
+  onChange: (selectedDates) => {
+    // fetch POST with selectedDates[0]
+  },
+});
+
+//fetch reservation data
 async function fetchReservations() {
   let response = await fetch("http://localhost/guest-list/Ajax/test.php");
 
@@ -108,19 +119,19 @@ async function fetchReservations() {
 
 //display database
 async function reservationData() {
-  let reservations = await fetchReservations(); // Asynchrone Funktion, um Reservierungen abzurufen
+  let reservations = await fetchReservations();
 
   function displayData(reservations) {
-    const outputElement = document.getElementById("demo"); // Das Ziel-Element für die Ausgabe
-    outputElement.innerHTML = ""; // Leert den Inhalt von 'outputElement'
+    const outputElement = document.getElementById("demo");
+    outputElement.innerHTML = "";
 
-    //Erstellen der Tabelle
+    //Generate the table
     const table = document.createElement("table");
 
     const thead = table.createTHead();
     const headerRow = thead.insertRow();
     const headers = [
-      "Table",
+      "Persons",
       "Name",
       "Confirmed",
       "Time",
@@ -135,15 +146,13 @@ async function reservationData() {
       headerRow.appendChild(headerCell);
     });
 
-    // Erstelle den Tabellenkörper (tbody)
     const tbody = table.createTBody();
 
-    // Erstelle für jede Reservierung eine neue Tabellenzeile
     reservations.forEach((reservation) => {
       const row = tbody.insertRow();
 
       const tableCell = row.insertCell();
-      tableCell.textContent = reservation.table;
+      tableCell.textContent = reservation.persons;
 
       const nameCell = row.insertCell();
       nameCell.textContent = reservation.user_name;
@@ -164,11 +173,9 @@ async function reservationData() {
       idCell.textContent = reservation.id;
     });
 
-    // Füge die Tabelle zum DOM hinzu
     outputElement.appendChild(table);
   }
 
-  // Aufruf der Funktion zur Anzeige der Reservierungen
   displayData(reservations);
 }
 

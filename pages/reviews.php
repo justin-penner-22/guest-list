@@ -3,8 +3,9 @@
   <div class="container-reviews">
     <h3>Enoteca Pinchiorri<br></h3>
     <h2>Restaurantkritik: Saruman – Ein vegetarisches Kleinod der Exklusivität</h2>
-    <p>Versteckt in einer unscheinbaren Seitenstraße entfaltet sich im Restaurant Saruman eine kulinarische Welt, die ebenso geheimnisvoll wie exquisit ist. Mit nur wenigen Sitzplätzen und einer ebenso reduzierten wie durchdachten Speisekarte richtet sich das Lokal an Gäste, die bewusst genießen – abseits vom Lärm der Massen und mit einem klaren Fokus auf vegetarische Raffinesse.</p>
-
+    <p>
+      Versteckt in einer unscheinbaren Seitenstraße entfaltet sich im Restaurant Saruman eine kulinarische Welt, die ebenso geheimnisvoll wie exquisit ist. Mit nur wenigen Sitzplätzen und einer ebenso reduzierten wie durchdachten Speisekarte richtet sich das Lokal an Gäste, die bewusst genießen – abseits vom Lärm der Massen und mit einem klaren Fokus auf vegetarische Raffinesse.
+    </p>
       
       <h3>Ambiente</h3>
      <p>
@@ -35,8 +36,9 @@
     <div class="container-reviews">
     <h3>Panzanella<br></h3>
     <h2>Restaurantkritik: Saruman – Stilvolle Zurückhaltung mit kleinen Abzügen</h2>
-    <p>In einer ruhigen Seitenstraße gelegen, präsentiert sich das Restaurant Saruman als eine exklusive Oase für Liebhaber der vegetarischen Küche. Mit seiner reduzierten Platzanzahl und dem klaren Bekenntnis zu pflanzenbasierter Kulinarik spricht es eine bewusst wählende Klientel an – doch bei aller Raffinesse bleibt ein Hauch von Distanz.</p>
-
+    <p>
+      In einer ruhigen Seitenstraße gelegen, präsentiert sich das Restaurant Saruman als eine exklusive Oase für Liebhaber der vegetarischen Küche. Mit seiner reduzierten Platzanzahl und dem klaren Bekenntnis zu pflanzenbasierter Kulinarik spricht es eine bewusst wählende Klientel an – doch bei aller Raffinesse bleibt ein Hauch von Distanz.
+    </p>
       
       <h3>Ambiente</h3>
      <p>

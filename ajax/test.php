@@ -3,7 +3,7 @@ require '../config.php';
 
 function getReservations() {
     $pdo = new PDO("mysql:host=" . HOST . ";dbname=" . DB, USER, PASSWORD);
-    $stmt = "SELECT `id`, `date`, `table`, `time`, `confirmed`, `user_name`, `email_address` FROM reservations";
+    $stmt = "SELECT `id`, `date`, `persons`, `time`, `confirmed`, `user_name`, `email_address` FROM reservations";
     $rows = $pdo->query($stmt);
     $data = [];
     foreach($rows as $row){
@@ -14,7 +14,7 @@ function getReservations() {
 
 echo json_encode(getReservations());
 
-
+//Generate fake data
 /*
 $statement = $pdo->prepare("INSERT INTO reservations
 (`date`, `table`, `time`, confirmed, user_name, email_address) VALUES (?,?,?,?,?,?)");
