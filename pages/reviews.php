@@ -1,6 +1,8 @@
 <div class="container-max">
 <div class="container">
-  <div class="container-reviews">
+    <div class="review-container">
+
+  <div class="review-card">
     <h3>Enoteca Pinchiorri<br></h3>
     <h2>Restaurantkritik: Saruman – Ein vegetarisches Kleinod der Exklusivität</h2>
     <p>
