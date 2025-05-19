@@ -1,23 +1,36 @@
 .reservation-container {
-  padding-top: 16vh;
+  padding-top: 15vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 16px;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 64px;
   background-color: #eeeeee;
 }
 
+.reservation-title {
+  grid-area: 1 / 1 / 1 / 7;
+  font-size: 3rem;
+}
+
 .reservation-grid-image {
-  grid-area: 1 / 1 / 4 / 4;
+  grid-area: 2 / 1 / 5 / 4;
 }
 
 .reservation-grid-card {
-  grid-area: 1 / 4 / 4 / 7;
+  grid-area: 2 / 4 / 5 / 7;
+  background-color: lightcoral;
+  display: block;
+}
+
+.reservation-option-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .select-box-container {
   position: relative;
   width: 50%;
+  margin: 4px;
 }
 
 .select-box {
@@ -25,15 +38,25 @@
   appearance: none;
   padding: 8px;
   width: 100%;
-  color: white;
-  background-color: var(--main-blue);
+  color: var(--main-blue);
   font-size: 1.2rem;
+  border: solid 1px var(--main-blue);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .select-icon {
-  width: 24px;
+  width: 16px;
   height: auto;
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 12px;
+  right: 14px;
+}
+
+#reservation-time {
+  width: 100%;
+}
+
+.reservation-infos {
+  grid-area: 5 / 1 / 8 / 7;
 }

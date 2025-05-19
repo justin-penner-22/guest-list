@@ -99,15 +99,32 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => plusSlides(1), 8000);
 }
 
-/*Reservation******************************************************************************************/
-flatpickr("#dateInput", {
-  minDate: "today",
-  disable: [
-    /* closed reservation from server */
-  ],
-  onChange: (selectedDates) => {
-    // fetch POST with selectedDates[0]
-  },
+/*Reservation***********************************************************************************/
+//flatpickr
+function roundTo30Minutes(date = new Date()) {
+  const minutes = date.getMinutes();
+  const remainder = 30 - (minutes % 30);
+  date.setMinutes(minutes + remainder);
+  date.setSeconds(0);
+  date.setMilliseconds(0);
+  return date;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const today = roundTo30Minutes();
+
+  flatpickr("#reservation-time", {
+    enableTime: true,
+    altInput: true,
+    time_24hr: true,
+    minuteIncrement: 30,
+    altFormat: "F j, Y H:i",
+    dateFormat: "Y-m-d H:i",
+    defaultDate: today,
+    minTime: "12:00",
+    maxTime: "21:00",
+    local: "de",
+  });
 });
 
 //fetch reservation data
