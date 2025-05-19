@@ -1,13 +1,15 @@
 <div class="container-max">
     <div class="container">
         <div class="reservation-container">
+            <h2 class="reservation-title">Saruman - Vegetarisches Essen</h2>
             <picture class="reservation-grid-image">
                 <img src="images/others/location1.jpg" alt="restaurant">
             </picture>
             <div class="reservation-grid-card">
                 <h2>Tisch reservieren</h2>
-                <div class="select-box-container">
-                    <select id="persons" name="Personen" class="select-box">
+                <div class="reservation-option-container">
+                    <div class="select-box-container">
+                        <select id="persons" name="Personen" class="select-box">
                             <option value="1" class="select-option">1 Personen</option>
                             <option value="2" class="select-option">2 Personen</option>
                             <option value="3" class="select-option">3 Personen</option>
@@ -28,11 +30,11 @@
                             <option value="3" class="select-option">18 Personen</option>
                             <option value="4" class="select-option">19 Personen</option>
                             <option value="5" class="select-option">20 Personen</option>
-                    </select>
+                        </select>                       
                         <image nclick="reservationArrow()" src="graphics/icons/arrow-down.svg" class="select-icon"><image>                   
-                </div>
+                    </div>
 
-                <div class="select-box-container">
+                    <div class="select-box-container">
                         <form class="select-box">
                             <input id="reservation-time" placeholder="Datum">   
                         </form>

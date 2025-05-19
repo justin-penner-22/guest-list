@@ -1,5 +1,5 @@
 <div class="container-max">
-<div class="container">
+  <div class="container">
     <div class="review-container">
 
   <div class="review-card">
@@ -32,10 +32,9 @@
      <span class="bold">Bewertung: 5/5 Sterne</span>
        Ein Muss für Feinschmecker mit Sinn für das Feine, das Leise und das Grüne.</p>
      </p>
-    
   </div>
 
-    <div class="container-reviews">
+    <div class="review-card">
     <h3>Panzanella<br></h3>
     <h2>Restaurantkritik: Saruman – Stilvolle Zurückhaltung mit kleinen Abzügen</h2>
     <p>
@@ -43,28 +42,28 @@
     </p>
       
       <h3>Ambiente</h3>
-     <p>
-      Das Interieur ist geschmackvoll minimalistisch. Gedimmtes Licht, feine Materialien und eine zurückhaltende Geräuschkulisse schaffen einen Raum der Konzentration – beinahe meditativ. Die Atmosphäre lädt zur Entschleunigung ein, wirkt jedoch stellenweise fast zu steril. Wo andere exklusive Lokale auf warme Details und persönliche Akzente setzen, bleibt Saruman eher kühl und kontrolliert. Der Service agiert präzise, freundlich und unaufdringlich – wenngleich mitunter auch etwas unterkühlt und distanziert.
-     </p>
+      <p>
+        Das Interieur ist geschmackvoll minimalistisch. Gedimmtes Licht, feine Materialien und eine zurückhaltende Geräuschkulisse schaffen einen Raum der Konzentration – beinahe meditativ. Die Atmosphäre lädt zur Entschleunigung ein, wirkt jedoch stellenweise fast zu steril. Wo andere exklusive Lokale auf warme Details und persönliche Akzente setzen, bleibt Saruman eher kühl und kontrolliert. Der Service agiert präzise, freundlich und unaufdringlich – wenngleich mitunter auch etwas unterkühlt und distanziert.
+      </p>
 
-     <h3>Küche</h3>
-     <p>
+      <h3>Küche</h3>
+      <p>
         Kulinarisch bleibt Saruman seinem Anspruch treu: Aufwendige vegetarische Kompositionen, die saisonale und regionale Zutaten mit weltläufigen Aromen vereinen. Die Anrichteweise ist durchdacht, die Teller oft kleine Kunstwerke. Besonders gelungen war eine Vorspeise aus gebackener Aubergine mit Miso und geröstetem Sesam.
-     </p>
-     <p>
+      </p>
+      <p>
         Allerdings fehlte es manchen Gerichten an Balance. Ein Hauptgang aus Roter Bete, Walnuss-Creme und Apfelessig zeigte zwar Mut zur Kombination, wirkte aber in der Textur überladen und geschmacklich unausgewogen. Es sind keine groben Patzer – aber kleine Brüche im Gesamtkonzept, die bei dem gehobenen Anspruch stärker ins Gewicht fallen.
-     </p>
+      </p>
 
-     <h3>Fazit</h3>
-     <p>
+      <h3>Fazit</h3>
+      <p>
         Saruman ist ein Restaurant, das mit Anspruch und Ästhetik überzeugt – jedoch nicht ohne kleinere Schwächen. Wer einen ruhigen Abend mit feinsinniger vegetarischer Küche sucht, wird hier mit Sicherheit fündig. Doch es fehlt an jenem gewissen Funken, der aus einem sehr guten Erlebnis ein unvergessliches macht.
-     </p>
+      </p>
 
-     <p>
+      <p>
         <span class="bold">Bewertung: 4/5 Sterne</span>
         Ein eleganter Rückzugsort für Feinschmecker – mit viel Potenzial nach oben.</p>
-     </p>
-    
+      </p>
+      </div>
     </div>
   </div>
 </div>

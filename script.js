@@ -238,8 +238,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (!isActive) {
-        info.style.maxHeight = info.scrollHeight + "px";
-        info.style.padding = "18px";
+        info.style.maxHeight = "500px";
+        info.style.marginTop = "16px";
+        info.style.paddingLeft = "16px";
+        info.style.transition = "max-height 1s ease, padding 1s ease";
         info.style.border = "var(--main-blue) 1px solid";
         info.style.borderTop = "none";
         btn.classList.add("active");

@@ -1,17 +1,35 @@
-.container-reviews {
+.review-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+  position: relative;
+  padding-top: 9vh;
+  flex-direction: row;
+}
+
+.review-card {
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
   align-items: center;
   color: var(--main-brown);
-  border-radius: 0%;
   padding: 24px 78px 24px 78px;
   margin: 50px;
-  padding-top: 9vh;
 }
 
-.container-reviews p {
+.review-card p {
   padding: 0 24 0 24;
   text-align: center;
   gap: 12px;
+  text-align: justify;
+}
+
+@media (max-width: 1920px) {
+  .review-container {
+    flex-direction: column;
+    max-width: 900px;
+    align-content: center;
+    margin: auto;
+  }
 }
