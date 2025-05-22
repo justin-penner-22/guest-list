@@ -110,10 +110,16 @@ function roundTo30Minutes(date = new Date()) {
   return date;
 }
 
+function getNextYearDate(date = new Date()) {
+  const today = new Date(date);
+  today.setFullYear(date.getFullYear() + 1);
+  return today;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const today = roundTo30Minutes();
-
-  flatpickr("#reservation-time", {
+  const nextYear = getNextYearDate();
+  const calendarInstance = flatpickr("#reservation-time", {
     enableTime: true,
     altInput: true,
     time_24hr: true,
@@ -123,8 +129,38 @@ document.addEventListener("DOMContentLoaded", () => {
     defaultDate: today,
     minTime: "12:00",
     maxTime: "21:00",
-    local: "de",
+    locale: "de",
+    minDate: today,
+    maxDate: nextYear,
+    positionElement: document.querySelector("#dropdown-display"),
+    clickOpens: false,
   });
+
+  //Display reservation options
+  let selectionOptions = "persons";
+  let calendar = document.querySelector("#reservation-time");
+  let list = document.querySelector("#dropdown-list");
+  const btnPersons = document.querySelector("#dropdown-button");
+  const btnTime = document.querySelector("#reservation-time-btn");
+
+  btnPersons.addEventListener("click", () => {
+    selectionOptions = "persons";
+    displayOptions();
+  });
+  btnTime.addEventListener("click", () => {
+    selectionOptions = "time";
+    displayOptions();
+  });
+
+  function displayOptions() {
+    if (selectionOptions === "persons") {
+      calendarInstance.close();
+      list.classList.add("active");
+    } else if (selectionOptions === "time") {
+      list.classList.remove("active");
+      calendarInstance.open();
+    }
+  }
 });
 
 //fetch reservation data

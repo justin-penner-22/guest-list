@@ -8,39 +8,42 @@
             <div class="reservation-grid-card">
                 <h2>Tisch reservieren</h2>
                 <div class="reservation-option-container">
-                    <div class="select-box-container">
-                        <select id="persons" name="Personen" class="select-box">
-                            <option value="1" class="select-option">1 Personen</option>
-                            <option value="2" class="select-option">2 Personen</option>
-                            <option value="3" class="select-option">3 Personen</option>
-                            <option value="4" class="select-option">4 Personen</option>
-                            <option value="5" class="select-option">5 Personen</option>
-                            <option value="1" class="select-option">6 Personen</option>
-                            <option value="2" class="select-option">7 Personen</option>
-                            <option value="3" class="select-option">8 Personen</option>
-                            <option value="4" class="select-option">9 Personen</option>
-                            <option value="5" class="select-option">10 Personen</option>
-                            <option value="1" class="select-option">11 Personen</option>
-                            <option value="2" class="select-option">12 Personen</option>
-                            <option value="3" class="select-option">13 Personen</option>
-                            <option value="4" class="select-option">14 Personen</option>
-                            <option value="5" class="select-option">15 Personen</option>
-                            <option value="1" class="select-option">16 Personen</option>
-                            <option value="2" class="select-option">17 Personen</option>
-                            <option value="3" class="select-option">18 Personen</option>
-                            <option value="4" class="select-option">19 Personen</option>
-                            <option value="5" class="select-option">20 Personen</option>
-                        </select>                       
-                        <image nclick="reservationArrow()" src="graphics/icons/arrow-down.svg" class="select-icon"><image>                   
-                    </div>
+                    <button id="dropdown-button" class="btn-primary">Personen</button>
+                    
 
                     <div class="select-box-container">
-                        <form class="select-box">
-                            <input id="reservation-time" placeholder="Datum">   
-                        </form>
+                        <button id="reservation-time-btn">
+                            <input id="reservation-time" placeholder="Datum">
+                        </button>   
                     </div>
                 </div>
+                <div id="dropdown-display">
+                    <ul id="dropdown-list">
+                        <li class="dropdown-item">1 Personen</li>
+                        <li class="dropdown-item">2 Personen</li>
+                        <li class="dropdown-item">3 Personen</li>
+                        <li class="dropdown-item">4 Personen</li>
+                        <li class="dropdown-item">5 Personen</li>
+                        <li class="dropdown-item">6 Personen</li>
+                        <li class="dropdown-item">7 Personen</li>
+                        <li class="dropdown-item">8 Personen</li>
+                        <li class="dropdown-item">9 Personen</li>
+                        <li class="dropdown-item">10 Personen</li>
+                        <li class="dropdown-item">11 Personen</li>
+                        <li class="dropdown-item">12 Personen</li>
+                        <li class="dropdown-item">13 Personen</li>
+                        <li class="dropdown-item">14 Personen</li>
+                        <li class="dropdown-item">15 Personen</li>
+                        <li class="dropdown-item">16 Personen</li>
+                        <li class="dropdown-item">17 Personen</li>
+                        <li class="dropdown-item">18 Personen</li>
+                        <li class="dropdown-item">19 Personen</li>
+                        <li class="dropdown-item">20 Personen</li> 
+                    </ul>
+                </div>
             </div>
+
+
             <div class="reservation-infos">
                 Infors über das Restaurant: Öffnungszeiten, Fotos, Speisekarte, Bewertungen etc. 
             </div>
@@ -51,6 +54,7 @@
 <div class="container-max">
     <div class="container">
         <button class="btn-primary" id="kadabra" onclick="reservationData()">AJAX</button>
-        <div id="demo">Hier wird Text generiert</div>
+        <div id="demo">
+        </div>
     </div>  
 </div> 

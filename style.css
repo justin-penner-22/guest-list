@@ -61,6 +61,7 @@ img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   width: fit-content;
+  height: fit-content;
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
 }
@@ -79,12 +80,13 @@ img {
 .btn-secondary {
   background-color: var(--main-brown);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 0.75em 1.5em;
   border: 2px solid var(--main-brown-light);
   border-radius: 0.5em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  height: fit-content;
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
 }
