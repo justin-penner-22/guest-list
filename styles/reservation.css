@@ -18,20 +18,24 @@
 
 .reservation-grid-card {
   grid-area: 2 / 4 / 5 / 7;
-  background-color: lightcoral;
   display: block;
 }
 
 .reservation-option-container {
   display: flex;
   justify-content: space-between;
+  background-color: #c21d1d;
+}
+
+#dropdown-display {
+  overflow: hidden;
+  margin-top: 32px;
 }
 
 #dropdown-list {
   border-radius: 10px;
   width: 100%;
   z-index: 1;
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   flex-wrap: wrap;
@@ -40,28 +44,25 @@
   max-height: 0px;
   transition: max-height 1s;
   margin: 0;
+  display: none;
 }
 
 #dropdown-list.active {
   max-height: 1000px;
+  display: grid;
 }
 
 .dropdown-item {
   padding: 8px;
   cursor: pointer;
-  background-color: steelblue;
   list-style-type: none;
   border-radius: 4px;
+  border: 2px solid #42a5f5;
 }
 
 .dropdown-item:hover {
-  background-color: var(--main-blue);
+  background-color: #42a5f5;
   color: white;
-}
-
-#dropdown-display {
-  overflow: hidden;
-  margin-top: 32px;
 }
 
 .select-box-container {

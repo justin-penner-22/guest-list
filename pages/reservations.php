@@ -8,7 +8,7 @@
             <div class="reservation-grid-card">
                 <h2>Tisch reservieren</h2>
                 <div class="reservation-option-container">
-                    <button id="dropdown-button" class="btn-primary">Personen</button>
+                    <button id="dropdown-button" class="btn-primary">2 Personen</button>
                     
 
                     <div class="select-box-container">
@@ -17,6 +17,7 @@
                         </button>   
                     </div>
                 </div>
+
                 <div id="dropdown-display">
                     <ul id="dropdown-list">
                         <li class="dropdown-item">1 Personen</li>
@@ -41,6 +42,7 @@
                         <li class="dropdown-item">20 Personen</li> 
                     </ul>
                 </div>
+
             </div>
 
 

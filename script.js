@@ -104,7 +104,15 @@ function autoSlide() {
 function roundTo30Minutes(date = new Date()) {
   const minutes = date.getMinutes();
   const remainder = 30 - (minutes % 30);
+  if (remainder < 30) {
   date.setMinutes(minutes + remainder);
+  }
+
+  if (date.getHours() < 12) {
+    date.setHours(12);
+    date.setMinutes(0);
+  }
+
   date.setSeconds(0);
   date.setMilliseconds(0);
   return date;
@@ -138,29 +146,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Display reservation options
   let selectionOptions = "persons";
-  let calendar = document.querySelector("#reservation-time");
   let list = document.querySelector("#dropdown-list");
   const btnPersons = document.querySelector("#dropdown-button");
   const btnTime = document.querySelector("#reservation-time-btn");
 
-  btnPersons.addEventListener("click", () => {
-    selectionOptions = "persons";
-    displayOptions();
-  });
-  btnTime.addEventListener("click", () => {
-    selectionOptions = "time";
-    displayOptions();
-  });
-
   function displayOptions() {
     if (selectionOptions === "persons") {
       calendarInstance.close();
+      calendarIsVisible = false;
       list.classList.add("active");
     } else if (selectionOptions === "time") {
       list.classList.remove("active");
       calendarInstance.open();
     }
   }
+
+  btnPersons.addEventListener("click", () => {
+    if (selectionOptions !== "persons") {
+      selectionOptions = "persons";
+      displayOptions();
+    }
+  });
+  btnTime.addEventListener("click", () => {
+    if (selectionOptions !== "time" || !calendarIsVisible) {
+      selectionOptions = "time";
+      displayOptions();
+    }
+  });
+
+  displayOptions();
 });
 
 //fetch reservation data
