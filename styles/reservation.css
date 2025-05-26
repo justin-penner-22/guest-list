@@ -32,7 +32,7 @@
   margin-top: 32px;
 }
 
-#dropdown-list {
+.dropdown-list {
   border-radius: 10px;
   width: 100%;
   z-index: 1;
@@ -44,10 +44,9 @@
   max-height: 0px;
   transition: max-height 1s;
   margin: 0;
-  display: none;
 }
 
-#dropdown-list.active {
+.dropdown-list.active {
   max-height: 1000px;
   display: grid;
 }

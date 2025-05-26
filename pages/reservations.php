@@ -8,18 +8,17 @@
             <div class="reservation-grid-card">
                 <h2>Tisch reservieren</h2>
                 <div class="reservation-option-container">
-                    <button id="dropdown-button" class="btn-primary">2 Personen</button>
-                    
-
-                    <div class="select-box-container">
-                        <button id="reservation-time-btn">
-                            <input id="reservation-time" placeholder="Datum">
-                        </button>   
-                    </div>
+                    <button id="dropdown-button" class="btn-primary">
+                        2 Personen
+                    </button>
+                
+                    <form>
+                        <input class="form-control" type="datetime-local" placeholder="Wähle ein Datum aus"></input>
+                    </form>
                 </div>
 
                 <div id="dropdown-display">
-                    <ul id="dropdown-list">
+                    <ul class="dropdown-list">
                         <li class="dropdown-item">1 Personen</li>
                         <li class="dropdown-item">2 Personen</li>
                         <li class="dropdown-item">3 Personen</li>
