@@ -232,12 +232,11 @@ nav {
 
 .menu-section h3 {
   font-size: 24px;
-  padding: 12px;
+  padding: 12px 0px 12px 0px;
   margin: 0;
 }
 
 .menu-subtext {
-  padding-left: 24px;
   font-size: 18px;
 }
 
@@ -258,7 +257,7 @@ nav {
   width: auto;
 }
 
-.menu-button-box {
+.button-box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -272,6 +271,9 @@ nav {
   }
   .menu-info-card-left {
     width: 100%;
+  }
+  .menu-subtext {
+    display: none;
   }
 }
 

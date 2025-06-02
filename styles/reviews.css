@@ -1,21 +1,23 @@
 .review-container {
   display: flex;
-  align-items: center;
+  align-items: top;
   width: 100%;
   align-self: center;
   position: relative;
   padding-top: 9vh;
   flex-direction: row;
+  margin: 0px;
 }
 
 .review-card {
   display: flex;
   flex-direction: column;
-  background-color: #eeeeee;
   align-items: center;
   color: var(--main-brown);
   padding: 24px 78px 24px 78px;
   margin: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--main-blue);
 }
 
 .review-card p {
@@ -31,5 +33,14 @@
     max-width: 900px;
     align-content: center;
     margin: auto;
+  }
+  .review-card {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 750px) {
+  .review-card {
+    padding: 8px;
   }
 }

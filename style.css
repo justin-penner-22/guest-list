@@ -70,6 +70,7 @@ img {
   background-color: var(--main-blue-light);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: var(--main-blue);
 }
 
 .btn-primary:active {
@@ -95,6 +96,7 @@ img {
   background-color: var(--main-brown-light);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: var(--main-brown);
 }
 
 .btn-secondary:active {

@@ -12,7 +12,10 @@
   <div class="container">
     <div class="carrier-container">
       <div class="carrier-card">
-        <button class="carrier-card-btn">Maître d’hôtel (Restaurantleiter)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">Berlin</span></button>
+        <button class="carrier-card-btn">
+          Maître d’hôtel (Restaurantleiter)<br><br><span class="font-normal">
+            <img src="graphics/icons/location.svg">Berlin</span>
+        </button>
         <ul class="carrier-card-info">
           <li><span class="bold">Stellen frei:</span> 1</li>
           <li><span class="bold">Aufgaben:</span> Empfang der Gäste, Tischzuteilung, Leitung des Serviceteams</li>
@@ -21,7 +24,9 @@
         </ul>
       </div>
       <div class="carrier-card">
-        <button class="carrier-card-btn">Chef de Cuisine (Küchenchef)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">Hamburg</span></button>
+        <button class="carrier-card-btn">
+          Chef de Cuisine (Küchenchef)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">Hamburg</span>
+        </button>
         <ul class="carrier-card-info">
           <li><span class="bold">Stellen frei:</span> 1</li>
           <li><span class="bold">Aufgaben:</span> Menügestaltung, Qualitätskontrolle, Führung der gesamten Küchenbrigade</li>
@@ -29,7 +34,9 @@
         </ul>
       </div>
       <div class="carrier-card">
-        <button class="carrier-card-btn">Sous Chef (Stellvertretender Küchenchef)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">Berlin</span></button>
+        <button class="carrier-card-btn">
+          Sous Chef (Stellvertretender Küchenchef)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">
+            Berlin</span></button>
         <ul class="carrier-card-info">
           <li><span class="bold">Stellen frei:</span> 1</li>
           <li><span class="bold">Aufgaben:</span> Unterstützung des Küchenchefs, Sicherstellung der Abläufe</li>
@@ -88,7 +95,7 @@
         <button class="carrier-card-btn">Garde Manger (Koch für kalte Küche)<br><br><span class="font-normal"><img src="graphics/icons/location.svg">Berlin</span></button>
         <ul class="carrier-card-info">
           <li><span class="bold">Stellen frei:</span> 1</li>
-          <li><span class="bold">Aufgaben:</span>  Zubereitung kalter Vorspeisen, Salate, Terrinen, Amuse-Bouches</li>
+          <li><span class="bold">Aufgaben:</span> Zubereitung kalter Vorspeisen, Salate, Terrinen, Amuse-Bouches</li>
           <li><span class="bold">Voraussetzungen:</span> Präzises Arbeiten, Gespür für Präsentation</li>
           <li><span class="bold">Hinweise:</span> Wichtiges Glied im Team für Menü-Kompositionen</li>
         </ul>
@@ -97,7 +104,7 @@
         <button class="carrier-card-btn">Spüler / Steward<br><br><span class="font-normal"><img src="graphics/icons/location.svg">München</span></button>
         <ul class="carrier-card-info">
           <li><span class="bold">Stellen frei:</span> 2</li>
-          <li><span class="bold">Aufgaben:</span>  Reinigung von Geschirr, Einhaltung von Hygienestandards</li>
+          <li><span class="bold">Aufgaben:</span> Reinigung von Geschirr, Einhaltung von Hygienestandards</li>
           <li><span class="bold">Voraussetzungen:</span> Teamfähigkeit, Zuverlässigkeit</li>
         </ul>
       </div>

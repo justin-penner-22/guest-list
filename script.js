@@ -140,6 +140,45 @@ document.addEventListener("DOMContentLoaded", () => {
     locale: "de",
     minDate: today,
     maxDate: nextYear,
+    clickOpens: false,
+    plugins: [
+      new confirmDatePlugin({
+        confirmIcon:
+          "<img src='graphics/icons/check.png' alt='OK' style='width: 24px; height: 24px;'>",
+        confirmText: "Bestätigen ",
+        showAlways: false,
+        theme: "light",
+      }),
+    ],
+    onValueUpdate: function (selectedDates, dateStr, instance) {
+      setTimeout(() => {
+        const hourElement =
+          instance.calendarContainer.querySelector(".flatpickr-hour");
+        const minuteElement =
+          instance.calendarContainer.querySelector(".flatpickr-minute");
+
+        if (
+          document.activeElement === hourElement ||
+          document.activeElement === minuteElement
+        ) {
+          document.activeElement.blur();
+        }
+      }, 0); // 0ms Delay reicht meistens aus
+    },
+  });
+
+  //toggle date picker
+  const toggleButton = document.querySelector("#dropdown-button");
+
+  toggleButton.addEventListener("click", () => {
+    console.log("test");
+    if (calendarInstance.isOpen) {
+      calendarInstance.close();
+      console.log("close");
+    } else {
+      calendarInstance.open();
+      console.log("open");
+    }
   });
 
   //Display reservation options
@@ -147,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnPersons = document.querySelector("#dropdown-button");
 
   function displayOptions() {
-    list.classList.add("dropdown-list.active");
+    list.classList.toggle("active");
   }
 
   btnPersons.addEventListener("click", () => {
@@ -263,17 +302,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       infos.forEach((element) => {
         element.style.maxHeight = "0px";
-        element.style.padding = "0px";
-        element.style.border = "none";
+        element.style.borderBottom = "none";
       });
 
       if (!isActive) {
-        info.style.maxHeight = "500px";
-        info.style.marginTop = "16px";
-        info.style.paddingLeft = "16px";
-        info.style.transition = "max-height 1s ease, padding 1s ease";
-        info.style.border = "var(--main-blue) 1px solid";
-        info.style.borderTop = "none";
+        info.style.maxHeight = "200px";
+        info.style.transition = "max-height 1s ease, padding 0.5s ease";
+        info.style.borderLeft = "var(--main-blue) 1px solid";
+        info.style.borderRight = "var(--main-blue) 1px solid";
         btn.classList.add("active");
       }
     });

@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="menu-info-card-left">
-            <h3>The Island</h3>
+                <h3>The Island</h3>
                 <p class="menu-subtext">Eine Metapher über die Flüchtigkeit des menschlichen Lebens</p>
                 <div class="menu-introduction-text">
                     Die verschiedenen Drehorte von The Menu waren entscheidend dafür, die Insel – den Schauplatz dieses künstlerischen Massakers – zum Leben zu erwecken. Sie ist ein idealer Horror-Schauplatz, da sie anfangs wie ein wunderschöner und malerischer, wenn auch unheilvoller Ort für ein Restaurant erscheint, sich aber schnell in ein Gefängnis verwandelt, aus dem es kein Entkommen gibt.
@@ -65,7 +65,7 @@
                 <h3>The Mess</h3>
                 <p class="menu-subtext">Ein Kommentar über die Sinnlosigkeit des Strebens nach Perfektion</p>
                 <div class="menu-introduction-text">
-                    Jeremy ist Julians Souschef und spielt eine zentrale Rolle bei einem der Gerichte in The Menu. 
+                    Jeremy ist Julians Souschef und spielt eine zentrale Rolle bei einem der Gerichte in The Menu.
                     Der vierte Gang beginnt damit, dass Jeremy sich selbst erschießt – er wird niemals gut genug sein,
                     um das Niveau des Chefkochs zu erreichen, wie Julian in seiner Ansprache erklärt.
                     Nachdem Jeremys Leiche weggebracht wurde, werden den Gästen unter Druck gegartes Gemüse,
@@ -74,6 +74,6 @@
             </div>
         </div>
     </div>
-    <div class="menu-button-box"><a href="/guest-list/?p=reservations"><button class="btn-secondary">JETZT RESERVIEREN</button></a></div>
-</div> 
+    <div class="button-box"><a href="/guest-list/?p=reservations"><button class="btn-secondary">JETZT RESERVIEREN</button></a></div>
+</div>
 <div class="background-image" style="background-image: url(images/the-menu/forest1.webp);"></div>

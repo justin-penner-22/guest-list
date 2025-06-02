@@ -11,7 +11,7 @@
                     <button id="dropdown-button" class="btn-primary">
                         2 Personen
                     </button>
-                
+
                     <form>
                         <input class="form-control" type="datetime-local" placeholder="Wähle ein Datum aus"></input>
                     </form>
@@ -38,7 +38,7 @@
                         <li class="dropdown-item">17 Personen</li>
                         <li class="dropdown-item">18 Personen</li>
                         <li class="dropdown-item">19 Personen</li>
-                        <li class="dropdown-item">20 Personen</li> 
+                        <li class="dropdown-item">20 Personen</li>
                     </ul>
                 </div>
 
@@ -46,7 +46,7 @@
 
 
             <div class="reservation-infos">
-                Infors über das Restaurant: Öffnungszeiten, Fotos, Speisekarte, Bewertungen etc. 
+                Infors über das Restaurant: Öffnungszeiten, Fotos, Speisekarte, Bewertungen etc.
             </div>
         </div>
     </div>
@@ -57,5 +57,5 @@
         <button class="btn-primary" id="kadabra" onclick="reservationData()">AJAX</button>
         <div id="demo">
         </div>
-    </div>  
-</div> 
+    </div>
+</div>

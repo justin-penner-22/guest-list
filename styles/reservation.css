@@ -23,8 +23,79 @@
 
 .reservation-option-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #c21d1d;
+}
+
+/*Calendar styling************************************************************/
+.form-control {
+  background-color: var(--main-blue);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75em 1.5em;
+  border: 2px solid var(--main-blue-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+  width: auto;
+}
+
+.form-control:hover {
+  background-color: var(--main-blue-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: var(--main-blue);
+}
+
+.flatpickr-calendar {
+  background-color: var(--main-blue) !important;
+  border-radius: 10px !important;
+}
+
+.flatpickr-month {
+  background-color: white !important;
+}
+
+.flatpickr-weekdays {
+  background-color: white !important;
+  color: white !important;
+}
+
+.flatpickr-day {
+  color: white !important;
+}
+
+.flatpickr-day:hover {
+  background-color: var(--main-blue-light) !important;
+}
+
+.flatpickr-confirm {
+  background-color: white !important;
+  color: black !important;
+}
+
+.flatpickr-hour {
+  color: white !important;
+}
+
+.flatpickr-hour:hover {
+  background-color: var(--main-blue-light) !important;
+}
+
+.flatpickr-minute {
+  color: white !important;
+}
+
+.flatpickr-minute:hover {
+  background-color: var(--main-blue-light) !important;
+}
+
+.flatpickr-time-separator {
+  color: white !important;
 }
 
 #dropdown-display {
@@ -42,13 +113,13 @@
   justify-content: center;
   padding: 0;
   max-height: 0px;
-  transition: max-height 1s;
+  transition: max-height 0.5s ease-out;
   margin: 0;
+  display: grid;
 }
 
 .dropdown-list.active {
-  max-height: 1000px;
-  display: grid;
+  max-height: 500px;
 }
 
 .dropdown-item {
@@ -62,12 +133,6 @@
 .dropdown-item:hover {
   background-color: #42a5f5;
   color: white;
-}
-
-.select-box-container {
-  position: relative;
-  width: 50%;
-  margin: 4px;
 }
 
 #reservation-time {
