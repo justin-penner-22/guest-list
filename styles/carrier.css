@@ -76,13 +76,13 @@
 
 .carrier-card-btn img {
   width: 24px;
-  height: 24px;
+  height: auto;
   margin-right: 12px;
 }
 
 .carrier-card-info {
   background-color: white;
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
   list-style-type: none;
   line-height: 1.2;
@@ -91,6 +91,7 @@
   margin: 16px 0 0 0;
   padding-left: 8px;
   transition-timing-function: ease-in;
+  transition: 1s ease;
 }
 
 .carrier-card-info li {

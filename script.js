@@ -18,7 +18,7 @@ function scrollFunction() {
     document.getElementsByClassName("icon-burger")[0].style.height = "9vh";
   }
 }
-/**Active Page styling **************************************************************************/
+/**Active Page styling ******************************************************************************/
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".nav-btn");
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*small menu*************************************************************************************/
+/*small menu********************************************************************/
 function showMenu() {
   var x = document.getElementById("my-links");
   if (x.style.display === "block") {
@@ -54,7 +54,7 @@ function showMenu() {
   }
 }
 
-/*slider*****************************************************************************************/
+/*slider*************************************************************************/
 let slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function () {
   showSlides(slideIndex);
@@ -99,7 +99,7 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => plusSlides(1), 8000);
 }
 
-/*Reservation***********************************************************************************/
+/*Reservation*******************************************************************/
 //flatpickr
 function roundTo30Minutes(date = new Date()) {
   const minutes = date.getMinutes();
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
           document.activeElement.blur();
         }
-      }, 0); // 0ms Delay reicht meistens aus
+      }, 0);
     },
   });
 
@@ -265,7 +265,7 @@ async function reservationData() {
   displayData(reservations);
 }
 
-/**Rotation of dishes Page *********************************************************************/
+  /**Rotation of dishes Page *******************************************************/
 document.addEventListener("DOMContentLoaded", () => {
   const rotationImage = document.querySelectorAll(".dish-image");
 
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/***Accordion Carrier Page *********************************************************************************/
+  /***Accordion Carrier Page *******************************************************/
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".carrier-card-btn");
   const infos = document.querySelectorAll(".carrier-card-info");
@@ -302,16 +302,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       infos.forEach((element) => {
         element.style.maxHeight = "0px";
-        element.style.borderBottom = "none";
       });
 
       if (!isActive) {
-        info.style.maxHeight = "200px";
-        info.style.transition = "max-height 1s ease, padding 0.5s ease";
+          info.style.maxHeight = info.scrollHeight + "px";
         info.style.borderLeft = "var(--main-blue) 1px solid";
         info.style.borderRight = "var(--main-blue) 1px solid";
-        btn.classList.add("active");
       }
+      });
     });
   });
 });

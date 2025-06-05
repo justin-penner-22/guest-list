@@ -181,7 +181,10 @@ footer {
 
 .footer-data {
   padding-top: 16px;
+  display: flex;
+  flex-direction: row;
 }
+
 .footer-link {
   display: flex;
   flex-direction: column;
@@ -200,6 +203,10 @@ footer {
 .footer-icon {
   height: 20px;
   padding-right: 8px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .footer-social-media {
