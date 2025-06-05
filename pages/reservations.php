@@ -12,9 +12,12 @@
                         2 Personen
                     </button>
 
-                    <form>
+                    <form id="date-dropdown-button">
                         <input class="form-control" type="datetime-local" placeholder="Wähle ein Datum aus"></input>
                     </form>
+                    <button class="btn-primary" id="submit-reservation-btn">
+                        Reservieren
+                    </button>
                 </div>
 
                 <div id="dropdown-display">

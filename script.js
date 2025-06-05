@@ -168,22 +168,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //toggle date picker
-  const toggleButton = document.querySelector("#dropdown-button");
+  const toggleButton = document.querySelector("#date-dropdown-button");
 
   toggleButton.addEventListener("click", () => {
-    console.log("test");
     if (calendarInstance.isOpen) {
       calendarInstance.close();
-      console.log("close");
     } else {
       calendarInstance.open();
-      console.log("open");
     }
   });
 
   //Display reservation options
-  let list = document.querySelector(".dropdown-list");
+  const list = document.querySelector(".dropdown-list");
   const btnPersons = document.querySelector("#dropdown-button");
+  const personItems = document.querySelectorAll(".dropdown-item");
 
   function displayOptions() {
     list.classList.toggle("active");
@@ -193,122 +191,181 @@ document.addEventListener("DOMContentLoaded", () => {
     displayOptions();
   });
 
-  displayOptions();
-});
+  personItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      btnPersons.innerHTML = item.innerHTML;
+      displayOptions();
+    });
+  });
 
-//fetch reservation data
-async function fetchReservations() {
-  let response = await fetch("http://localhost/guest-list/Ajax/test.php");
+  /**Generated Code *********************************************************/
 
-  return await response.json();
-}
+  document
+    .querySelector("#submit-reservation-btn")
+    .addEventListener("click", () => {
+      // 6.1 Read the chosen date/time (Flatpickr uses the input’s value)
+      const dateTime = document.querySelector("#reservation-datetime").value;
+      // Format is already "YYYY-MM-DD HH:MM" thanks to dateFormat
 
-//display database
-async function reservationData() {
-  let reservations = await fetchReservations();
+      // 6.2 Read number of persons (the button text is e.g. "5 Personen")
+      const personsText = document
+        .querySelector("#dropdown-button")
+        .textContent.trim();
+      const personsCount = parseInt(personsText.split(" ")[0], 10);
+      // splits "5 Personen" → ["5", "Personen"], takes 5
 
-  function displayData(reservations) {
-    const outputElement = document.getElementById("demo");
-    outputElement.innerHTML = "";
+      // 6.3 Basic validation
+      if (!dateTime) {
+        alert("Bitte wähle ein Datum und eine Uhrzeit.");
+        return;
+      }
+      if (isNaN(personsCount) || personsCount < 1) {
+        alert("Bitte wähle die Anzahl der Personen.");
+        return;
+      }
 
-    //Generate the table
-    const table = document.createElement("table");
+      // 6.4 Build URL-encoded body
+      const bodyData = `datetime=${encodeURIComponent(
+        dateTime
+      )}&persons=${encodeURIComponent(personsCount)}`;
 
-    const thead = table.createTHead();
-    const headerRow = thead.insertRow();
-    const headers = [
-      "Persons",
-      "Name",
-      "Confirmed",
-      "Time",
-      "Date",
-      "Email",
-      "ID",
-    ];
-
-    headers.forEach((headerText) => {
-      const headerCell = document.createElement("th");
-      headerCell.textContent = headerText;
-      headerRow.appendChild(headerCell);
+      // 6.5 Send POST to PHP endpoint
+      fetch("submit_reservation.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: bodyData,
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          if (json.success) {
+            alert("Reservierung erfolgreich gespeichert!");
+            // Optionally clear inputs or redirect
+          } else {
+            alert("Konnte die Reservierung nicht speichern.");
+          }
+        })
+        .catch((err) => {
+          console.error("Fetch error:", err);
+          alert("Ein Fehler ist aufgetreten.");
+        });
     });
 
-    const tbody = table.createTBody();
+  /** Database comunication *************************************************/
+  //fetch reservation data
+  async function fetchReservations() {
+    let response = await fetch("http://localhost/guest-list/Ajax/test.php");
 
-    reservations.forEach((reservation) => {
-      const row = tbody.insertRow();
-
-      const tableCell = row.insertCell();
-      tableCell.textContent = reservation.persons;
-
-      const nameCell = row.insertCell();
-      nameCell.textContent = reservation.user_name;
-
-      const confirmedCell = row.insertCell();
-      confirmedCell.textContent = reservation.confirmed;
-
-      const timeCell = row.insertCell();
-      timeCell.textContent = reservation.time;
-
-      const dateCell = row.insertCell();
-      dateCell.textContent = reservation.date;
-
-      const email_addressCell = row.insertCell();
-      email_addressCell.textContent = reservation.email_address;
-
-      const idCell = row.insertCell();
-      idCell.textContent = reservation.id;
-    });
-
-    outputElement.appendChild(table);
+    return await response.json();
   }
 
-  displayData(reservations);
-}
+  //display database
+  async function reservationData() {
+    let reservations = await fetchReservations();
 
-  /**Rotation of dishes Page *******************************************************/
-document.addEventListener("DOMContentLoaded", () => {
-  const rotationImage = document.querySelectorAll(".dish-image");
+    function displayData(reservations) {
+      const outputElement = document.getElementById("demo");
+      outputElement.innerHTML = "";
 
-  rotationImage.forEach((rotationImage) => {
-    rotationImage.addEventListener("mouseenter", () => {
-      if (!rotationImage.classList.contains("rotate-once")) {
-        rotationImage.classList.add("rotate-once");
-      }
-    });
-  });
+      //Generate the table
+      const table = document.createElement("table");
 
-  rotationImage.forEach((rotationImage) => {
-    rotationImage.addEventListener("animationend", () => {
-      if (rotationImage.classList.contains("rotate-once")) {
-        rotationImage.classList.remove("rotate-once");
-      }
-    });
-  });
-});
+      const thead = table.createTHead();
+      const headerRow = thead.insertRow();
+      const headers = [
+        "Persons",
+        "Name",
+        "Confirmed",
+        "Time",
+        "Date",
+        "Email",
+        "ID",
+      ];
 
-  /***Accordion Carrier Page *******************************************************/
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".carrier-card-btn");
-  const infos = document.querySelectorAll(".carrier-card-info");
-
-  buttons.forEach((btn) => {
-    btn.classList.remove("active");
-  });
-
-  buttons.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      const info = infos[index];
-      const isActive = info.style.maxHeight && info.style.maxHeight !== "0px";
-
-      infos.forEach((element) => {
-        element.style.maxHeight = "0px";
+      headers.forEach((headerText) => {
+        const headerCell = document.createElement("th");
+        headerCell.textContent = headerText;
+        headerRow.appendChild(headerCell);
       });
 
-      if (!isActive) {
+      const tbody = table.createTBody();
+
+      reservations.forEach((reservation) => {
+        const row = tbody.insertRow();
+
+        const tableCell = row.insertCell();
+        tableCell.textContent = reservation.persons;
+
+        const nameCell = row.insertCell();
+        nameCell.textContent = reservation.user_name;
+
+        const confirmedCell = row.insertCell();
+        confirmedCell.textContent = reservation.confirmed;
+
+        const timeCell = row.insertCell();
+        timeCell.textContent = reservation.time;
+
+        const dateCell = row.insertCell();
+        dateCell.textContent = reservation.date;
+
+        const email_addressCell = row.insertCell();
+        email_addressCell.textContent = reservation.email_address;
+
+        const idCell = row.insertCell();
+        idCell.textContent = reservation.id;
+      });
+
+      outputElement.appendChild(table);
+    }
+
+    displayData(reservations);
+  }
+
+  /**Rotation of dishes Page *******************************************************/
+  document.addEventListener("DOMContentLoaded", () => {
+    const rotationImage = document.querySelectorAll(".dish-image");
+
+    rotationImage.forEach((rotationImage) => {
+      rotationImage.addEventListener("mouseenter", () => {
+        if (!rotationImage.classList.contains("rotate-once")) {
+          rotationImage.classList.add("rotate-once");
+        }
+      });
+    });
+
+    rotationImage.forEach((rotationImage) => {
+      rotationImage.addEventListener("animationend", () => {
+        if (rotationImage.classList.contains("rotate-once")) {
+          rotationImage.classList.remove("rotate-once");
+        }
+      });
+    });
+  });
+
+  /***Accordion Carrier Page *******************************************************/
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".carrier-card-btn");
+    const infos = document.querySelectorAll(".carrier-card-info");
+
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    buttons.forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        const info = infos[index];
+        const isActive = info.style.maxHeight && info.style.maxHeight !== "0px";
+
+        infos.forEach((element) => {
+          element.style.maxHeight = "0px";
+        });
+
+        if (!isActive) {
           info.style.maxHeight = info.scrollHeight + "px";
-        info.style.borderLeft = "var(--main-blue) 1px solid";
-        info.style.borderRight = "var(--main-blue) 1px solid";
-      }
+          info.style.borderLeft = "var(--main-blue) 1px solid";
+          info.style.borderRight = "var(--main-blue) 1px solid";
+        }
       });
     });
   });

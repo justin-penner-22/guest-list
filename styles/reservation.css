@@ -78,7 +78,11 @@
 }
 
 .flatpickr-hour {
-  color: white !important;
+  color: var(--main-blue) !important;
+  background-color: white !important;
+  cursor: pointer !important;
+  border-bottom: 2px solid var(--main-blue) !important;
+  border-top: none !important;
 }
 
 .flatpickr-hour:hover {
@@ -86,7 +90,11 @@
 }
 
 .flatpickr-minute {
-  color: white !important;
+  color: var(--main-blue) !important;
+  background-color: white !important;
+  cursor: pointer !important;
+  border-bottom: 2px solid var(--main-blue) !important;
+  border-top: none !important;
 }
 
 .flatpickr-minute:hover {
@@ -94,7 +102,9 @@
 }
 
 .flatpickr-time-separator {
-  color: white !important;
+  color: var(--main-blue) !important;
+  background-color: white !important;
+  border-bottom: 1px solid var(--main-blue) !important;
 }
 
 #dropdown-display {
