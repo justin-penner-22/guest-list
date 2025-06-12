@@ -321,52 +321,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     displayData(reservations);
   }
+});
+/**Rotation of dishes Page *******************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+  const rotationImage = document.querySelectorAll(".dish-image");
 
-  /**Rotation of dishes Page *******************************************************/
-  document.addEventListener("DOMContentLoaded", () => {
-    const rotationImage = document.querySelectorAll(".dish-image");
-
-    rotationImage.forEach((rotationImage) => {
-      rotationImage.addEventListener("mouseenter", () => {
-        if (!rotationImage.classList.contains("rotate-once")) {
-          rotationImage.classList.add("rotate-once");
-        }
-      });
-    });
-
-    rotationImage.forEach((rotationImage) => {
-      rotationImage.addEventListener("animationend", () => {
-        if (rotationImage.classList.contains("rotate-once")) {
-          rotationImage.classList.remove("rotate-once");
-        }
-      });
+  rotationImage.forEach((rotationImage) => {
+    rotationImage.addEventListener("mouseenter", () => {
+      if (!rotationImage.classList.contains("rotate-once")) {
+        rotationImage.classList.add("rotate-once");
+      }
     });
   });
 
-  /***Accordion Carrier Page *******************************************************/
-  document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".carrier-card-btn");
-    const infos = document.querySelectorAll(".carrier-card-info");
-
-    buttons.forEach((btn) => {
-      btn.classList.remove("active");
+  rotationImage.forEach((rotationImage) => {
+    rotationImage.addEventListener("animationend", () => {
+      if (rotationImage.classList.contains("rotate-once")) {
+        rotationImage.classList.remove("rotate-once");
+      }
     });
+  });
+});
 
-    buttons.forEach((btn, index) => {
-      btn.addEventListener("click", () => {
-        const info = infos[index];
-        const isActive = info.style.maxHeight && info.style.maxHeight !== "0px";
+/***Accordion Carrier Page *******************************************************/
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".carrier-card-btn");
+  const infos = document.querySelectorAll(".carrier-card-info");
 
-        infos.forEach((element) => {
-          element.style.maxHeight = "0px";
-        });
+  buttons.forEach((btn) => {
+    btn.classList.remove("active");
+  });
 
-        if (!isActive) {
-          info.style.maxHeight = info.scrollHeight + "px";
-          info.style.borderLeft = "var(--main-blue) 1px solid";
-          info.style.borderRight = "var(--main-blue) 1px solid";
-        }
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      const info = infos[index];
+      const isActive = info.style.maxHeight && info.style.maxHeight !== "0px";
+
+      infos.forEach((element) => {
+        element.style.maxHeight = "0px";
       });
+
+      if (!isActive) {
+        info.style.maxHeight = info.scrollHeight + "px";
+        info.style.borderLeft = "var(--main-blue) 1px solid";
+        info.style.borderRight = "var(--main-blue) 1px solid";
+      }
     });
   });
 });

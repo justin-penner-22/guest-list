@@ -10,6 +10,7 @@ This project is an example for a restaurant website and doesn't display a real r
 - Phone view
 - Responsive Layout
 - accordion carrier cards
+- flatpickr calendar modified
 
 ## Reservation instructions
 
